@@ -83,6 +83,7 @@ typedef enum {
     UIView* view;
     if ([@[@"jpg", @"jpeg", @"png"] containsObject:[url pathExtension]]) {
         UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
         [imageView setImageWithURL:url];
         view = imageView;
     }
