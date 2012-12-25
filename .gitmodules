@@ -1,0 +1,3 @@
+[submodule "Vendor/CocoaPlant"]
+	path = Vendor/CocoaPlant
+	url = https://github.com/acani/CocoaPlant.git
