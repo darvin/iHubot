@@ -27,6 +27,32 @@
 		57F20F9C1689B55C0084E742 /* ACMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F20F971689B55C0084E742 /* ACMessage.m */; };
 		57F20F9D1689B55C0084E742 /* ACMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F20F991689B55C0084E742 /* ACMessagesViewController.m */; };
 		57F20F9E1689B55C0084E742 /* ACPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F20F9B1689B55C0084E742 /* ACPlaceholderTextView.m */; };
+		57F2104C1689C5610084E742 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210321689C5610084E742 /* Default.png */; };
+		57F2104D1689C5610084E742 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210331689C5610084E742 /* Default@2x.png */; };
+		57F2104E1689C5610084E742 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210341689C5610084E742 /* Icon.png */; };
+		57F2104F1689C5610084E742 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210351689C5610084E742 /* Icon@2x.png */; };
+		57F210501689C5610084E742 /* MessageBubbleBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210361689C5610084E742 /* MessageBubbleBlue.png */; };
+		57F210511689C5610084E742 /* MessageBubbleBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210371689C5610084E742 /* MessageBubbleBlue@2x.png */; };
+		57F210521689C5610084E742 /* MessageBubbleGray.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210381689C5610084E742 /* MessageBubbleGray.png */; };
+		57F210531689C5610084E742 /* MessageBubbleGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210391689C5610084E742 /* MessageBubbleGray@2x.png */; };
+		57F210541689C5610084E742 /* MessageBubbleHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F2103A1689C5610084E742 /* MessageBubbleHighlighted.png */; };
+		57F210551689C5610084E742 /* MessageBubbleHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F2103B1689C5610084E742 /* MessageBubbleHighlighted@2x.png */; };
+		57F210561689C5610084E742 /* MessageBubbleTyping.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F2103C1689C5610084E742 /* MessageBubbleTyping.png */; };
+		57F210571689C5610084E742 /* MessageBubbleTyping@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F2103D1689C5610084E742 /* MessageBubbleTyping@2x.png */; };
+		57F210581689C5610084E742 /* MessageInputBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F2103E1689C5610084E742 /* MessageInputBarBackground.png */; };
+		57F210591689C5610084E742 /* MessageInputBarBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F2103F1689C5610084E742 /* MessageInputBarBackground@2x.png */; };
+		57F2105A1689C5610084E742 /* MessageInputFieldBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210401689C5610084E742 /* MessageInputFieldBackground.png */; };
+		57F2105B1689C5610084E742 /* MessageInputFieldBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210411689C5610084E742 /* MessageInputFieldBackground@2x.png */; };
+		57F2105C1689C5610084E742 /* MessageReceived.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 57F210421689C5610084E742 /* MessageReceived.aiff */; };
+		57F2105D1689C5610084E742 /* MessageSent.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 57F210431689C5610084E742 /* MessageSent.aiff */; };
+		57F2105E1689C5610084E742 /* SendButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210441689C5610084E742 /* SendButton.png */; };
+		57F2105F1689C5610084E742 /* SendButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210451689C5610084E742 /* SendButton@2x.png */; };
+		57F210601689C5610084E742 /* SendButtonHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210461689C5610084E742 /* SendButtonHighlighted.png */; };
+		57F210611689C5610084E742 /* SendButtonHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210471689C5610084E742 /* SendButtonHighlighted@2x.png */; };
+		57F210621689C5610084E742 /* UnreadBullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210481689C5610084E742 /* UnreadBullet.png */; };
+		57F210631689C5610084E742 /* UnreadBullet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210491689C5610084E742 /* UnreadBullet@2x.png */; };
+		57F210641689C5610084E742 /* UnreadBulletHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F2104A1689C5610084E742 /* UnreadBulletHighlighted.png */; };
+		57F210651689C5610084E742 /* UnreadBulletHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F2104B1689C5610084E742 /* UnreadBulletHighlighted@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +62,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 57F20F551689B4E30084E742;
 			remoteInfo = iHubot;
+		};
+		57F210181689B7510084E742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57F20FCE1689B7510084E742 /* CocoaPlant.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C90B0CB313F55026009C18B1;
+			remoteInfo = CocoaPlant;
+		};
+		57F2101A1689B7510084E742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57F20FCE1689B7510084E742 /* CocoaPlant.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C951D3E013F87926001D12CD;
+			remoteInfo = CocoaPlantApp;
+		};
+		57F2101C1689B7510084E742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57F20FCE1689B7510084E742 /* CocoaPlant.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C90B0CC313F55026009C18B1;
+			remoteInfo = CocoaPlantSpecs;
+		};
+		57F2101E1689B7640084E742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57F20FCE1689B7510084E742 /* CocoaPlant.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C90B0CB213F55026009C18B1;
+			remoteInfo = CocoaPlant;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -68,6 +122,33 @@
 		57F20F991689B55C0084E742 /* ACMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMessagesViewController.m; sourceTree = "<group>"; };
 		57F20F9A1689B55C0084E742 /* ACPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPlaceholderTextView.h; sourceTree = "<group>"; };
 		57F20F9B1689B55C0084E742 /* ACPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACPlaceholderTextView.m; sourceTree = "<group>"; };
+		57F20FCE1689B7510084E742 /* CocoaPlant.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CocoaPlant.xcodeproj; sourceTree = "<group>"; };
+		57F210321689C5610084E742 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		57F210331689C5610084E742 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		57F210341689C5610084E742 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		57F210351689C5610084E742 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		57F210361689C5610084E742 /* MessageBubbleBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageBubbleBlue.png; sourceTree = "<group>"; };
+		57F210371689C5610084E742 /* MessageBubbleBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageBubbleBlue@2x.png"; sourceTree = "<group>"; };
+		57F210381689C5610084E742 /* MessageBubbleGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageBubbleGray.png; sourceTree = "<group>"; };
+		57F210391689C5610084E742 /* MessageBubbleGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageBubbleGray@2x.png"; sourceTree = "<group>"; };
+		57F2103A1689C5610084E742 /* MessageBubbleHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageBubbleHighlighted.png; sourceTree = "<group>"; };
+		57F2103B1689C5610084E742 /* MessageBubbleHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageBubbleHighlighted@2x.png"; sourceTree = "<group>"; };
+		57F2103C1689C5610084E742 /* MessageBubbleTyping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageBubbleTyping.png; sourceTree = "<group>"; };
+		57F2103D1689C5610084E742 /* MessageBubbleTyping@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageBubbleTyping@2x.png"; sourceTree = "<group>"; };
+		57F2103E1689C5610084E742 /* MessageInputBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageInputBarBackground.png; sourceTree = "<group>"; };
+		57F2103F1689C5610084E742 /* MessageInputBarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageInputBarBackground@2x.png"; sourceTree = "<group>"; };
+		57F210401689C5610084E742 /* MessageInputFieldBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageInputFieldBackground.png; sourceTree = "<group>"; };
+		57F210411689C5610084E742 /* MessageInputFieldBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageInputFieldBackground@2x.png"; sourceTree = "<group>"; };
+		57F210421689C5610084E742 /* MessageReceived.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = MessageReceived.aiff; sourceTree = "<group>"; };
+		57F210431689C5610084E742 /* MessageSent.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = MessageSent.aiff; sourceTree = "<group>"; };
+		57F210441689C5610084E742 /* SendButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SendButton.png; sourceTree = "<group>"; };
+		57F210451689C5610084E742 /* SendButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SendButton@2x.png"; sourceTree = "<group>"; };
+		57F210461689C5610084E742 /* SendButtonHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SendButtonHighlighted.png; sourceTree = "<group>"; };
+		57F210471689C5610084E742 /* SendButtonHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SendButtonHighlighted@2x.png"; sourceTree = "<group>"; };
+		57F210481689C5610084E742 /* UnreadBullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnreadBullet.png; sourceTree = "<group>"; };
+		57F210491689C5610084E742 /* UnreadBullet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnreadBullet@2x.png"; sourceTree = "<group>"; };
+		57F2104A1689C5610084E742 /* UnreadBulletHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnreadBulletHighlighted.png; sourceTree = "<group>"; };
+		57F2104B1689C5610084E742 /* UnreadBulletHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnreadBulletHighlighted@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +180,8 @@
 		57F20F4B1689B4E30084E742 = {
 			isa = PBXGroup;
 			children = (
+				57F210311689C5610084E742 /* Resources */,
+				57F20FAC1689B7510084E742 /* Vendor */,
 				57F20F621689B4E30084E742 /* iHubot */,
 				57F20F841689B4E30084E742 /* iHubotTests */,
 				57F20F591689B4E30084E742 /* Frameworks */,
@@ -178,6 +261,66 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		57F20FAC1689B7510084E742 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				57F20FAD1689B7510084E742 /* CocoaPlant */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		57F20FAD1689B7510084E742 /* CocoaPlant */ = {
+			isa = PBXGroup;
+			children = (
+				57F20FCE1689B7510084E742 /* CocoaPlant.xcodeproj */,
+			);
+			path = CocoaPlant;
+			sourceTree = "<group>";
+		};
+		57F20FCF1689B7510084E742 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57F210191689B7510084E742 /* libCocoaPlant.a */,
+				57F2101B1689B7510084E742 /* CocoaPlantApp.app */,
+				57F2101D1689B7510084E742 /* CocoaPlantSpecs.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57F210311689C5610084E742 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57F210321689C5610084E742 /* Default.png */,
+				57F210331689C5610084E742 /* Default@2x.png */,
+				57F210341689C5610084E742 /* Icon.png */,
+				57F210351689C5610084E742 /* Icon@2x.png */,
+				57F210361689C5610084E742 /* MessageBubbleBlue.png */,
+				57F210371689C5610084E742 /* MessageBubbleBlue@2x.png */,
+				57F210381689C5610084E742 /* MessageBubbleGray.png */,
+				57F210391689C5610084E742 /* MessageBubbleGray@2x.png */,
+				57F2103A1689C5610084E742 /* MessageBubbleHighlighted.png */,
+				57F2103B1689C5610084E742 /* MessageBubbleHighlighted@2x.png */,
+				57F2103C1689C5610084E742 /* MessageBubbleTyping.png */,
+				57F2103D1689C5610084E742 /* MessageBubbleTyping@2x.png */,
+				57F2103E1689C5610084E742 /* MessageInputBarBackground.png */,
+				57F2103F1689C5610084E742 /* MessageInputBarBackground@2x.png */,
+				57F210401689C5610084E742 /* MessageInputFieldBackground.png */,
+				57F210411689C5610084E742 /* MessageInputFieldBackground@2x.png */,
+				57F210421689C5610084E742 /* MessageReceived.aiff */,
+				57F210431689C5610084E742 /* MessageSent.aiff */,
+				57F210441689C5610084E742 /* SendButton.png */,
+				57F210451689C5610084E742 /* SendButton@2x.png */,
+				57F210461689C5610084E742 /* SendButtonHighlighted.png */,
+				57F210471689C5610084E742 /* SendButtonHighlighted@2x.png */,
+				57F210481689C5610084E742 /* UnreadBullet.png */,
+				57F210491689C5610084E742 /* UnreadBullet@2x.png */,
+				57F2104A1689C5610084E742 /* UnreadBulletHighlighted.png */,
+				57F2104B1689C5610084E742 /* UnreadBulletHighlighted@2x.png */,
+			);
+			name = Resources;
+			path = iHubot/Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,6 +335,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				57F2101F1689B7640084E742 /* PBXTargetDependency */,
 			);
 			name = iHubot;
 			productName = iHubot;
@@ -236,6 +380,12 @@
 			mainGroup = 57F20F4B1689B4E30084E742;
 			productRefGroup = 57F20F571689B4E30084E742 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 57F20FCF1689B7510084E742 /* Products */;
+					ProjectRef = 57F20FCE1689B7510084E742 /* CocoaPlant.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				57F20F551689B4E30084E742 /* iHubot */,
@@ -243,6 +393,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		57F210191689B7510084E742 /* libCocoaPlant.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaPlant.a;
+			remoteRef = 57F210181689B7510084E742 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		57F2101B1689B7510084E742 /* CocoaPlantApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CocoaPlantApp.app;
+			remoteRef = 57F2101A1689B7510084E742 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		57F2101D1689B7510084E742 /* CocoaPlantSpecs.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CocoaPlantSpecs.octest;
+			remoteRef = 57F2101C1689B7510084E742 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		57F20F541689B4E30084E742 /* Resources */ = {
@@ -253,6 +427,32 @@
 				57F20F6F1689B4E30084E742 /* Default.png in Resources */,
 				57F20F711689B4E30084E742 /* Default@2x.png in Resources */,
 				57F20F731689B4E30084E742 /* Default-568h@2x.png in Resources */,
+				57F2104C1689C5610084E742 /* Default.png in Resources */,
+				57F2104D1689C5610084E742 /* Default@2x.png in Resources */,
+				57F2104E1689C5610084E742 /* Icon.png in Resources */,
+				57F2104F1689C5610084E742 /* Icon@2x.png in Resources */,
+				57F210501689C5610084E742 /* MessageBubbleBlue.png in Resources */,
+				57F210511689C5610084E742 /* MessageBubbleBlue@2x.png in Resources */,
+				57F210521689C5610084E742 /* MessageBubbleGray.png in Resources */,
+				57F210531689C5610084E742 /* MessageBubbleGray@2x.png in Resources */,
+				57F210541689C5610084E742 /* MessageBubbleHighlighted.png in Resources */,
+				57F210551689C5610084E742 /* MessageBubbleHighlighted@2x.png in Resources */,
+				57F210561689C5610084E742 /* MessageBubbleTyping.png in Resources */,
+				57F210571689C5610084E742 /* MessageBubbleTyping@2x.png in Resources */,
+				57F210581689C5610084E742 /* MessageInputBarBackground.png in Resources */,
+				57F210591689C5610084E742 /* MessageInputBarBackground@2x.png in Resources */,
+				57F2105A1689C5610084E742 /* MessageInputFieldBackground.png in Resources */,
+				57F2105B1689C5610084E742 /* MessageInputFieldBackground@2x.png in Resources */,
+				57F2105C1689C5610084E742 /* MessageReceived.aiff in Resources */,
+				57F2105D1689C5610084E742 /* MessageSent.aiff in Resources */,
+				57F2105E1689C5610084E742 /* SendButton.png in Resources */,
+				57F2105F1689C5610084E742 /* SendButton@2x.png in Resources */,
+				57F210601689C5610084E742 /* SendButtonHighlighted.png in Resources */,
+				57F210611689C5610084E742 /* SendButtonHighlighted@2x.png in Resources */,
+				57F210621689C5610084E742 /* UnreadBullet.png in Resources */,
+				57F210631689C5610084E742 /* UnreadBullet@2x.png in Resources */,
+				57F210641689C5610084E742 /* UnreadBulletHighlighted.png in Resources */,
+				57F210651689C5610084E742 /* UnreadBulletHighlighted@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +511,11 @@
 			isa = PBXTargetDependency;
 			target = 57F20F551689B4E30084E742 /* iHubot */;
 			targetProxy = 57F20F821689B4E30084E742 /* PBXContainerItemProxy */;
+		};
+		57F2101F1689B7640084E742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaPlant;
+			targetProxy = 57F2101E1689B7640084E742 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -391,7 +596,13 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iHubot/iHubot-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Vendor/CocoaPlant/CocoaPlant\"";
 				INFOPLIST_FILE = "iHubot/iHubot-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"${BUILT_PRODUCTS_DIR}/libCocoaPlant.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -402,7 +613,13 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iHubot/iHubot-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Vendor/CocoaPlant/CocoaPlant\"";
 				INFOPLIST_FILE = "iHubot/iHubot-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"${BUILT_PRODUCTS_DIR}/libCocoaPlant.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -461,6 +678,7 @@
 				57F20F911689B4E30084E742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57F20F921689B4E30084E742 /* Build configuration list for PBXNativeTarget "iHubotTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +687,7 @@
 				57F20F941689B4E30084E742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

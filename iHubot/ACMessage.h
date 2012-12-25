@@ -7,5 +7,5 @@
 
 @property (nonatomic, retain) NSDate * sentDate;
 @property (nonatomic, retain) NSString * text;
-
++(id)sendMessage:(NSString*) messageText;
 @end

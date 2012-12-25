@@ -3,6 +3,7 @@
 #import "ACMessagesViewController.h"
 #import "ACPlaceholderTextView.h"
 #import "ACMessage.h"
+#import "UIView+CocoaPlant.h"
 
 // TODO: Rename to CHAT_BAR_HEIGHT_1, etc.
 #define kChatBarHeight1                      40
@@ -29,10 +30,8 @@
 
 #define UIKeyboardNotificationsObserve() \
 NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter]; \
-[notificationCenter addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil]
-//[notificationCenter addObserver:self selector:@selector(keyboardDidShow:)  name:UIKeyboardDidShowNotification  object:nil]; \
-//[notificationCenter addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil]; \
-//[notificationCenter addObserver:self selector:@selector(keyboardDidHide:)  name:UIKeyboardDidHideNotification  object:nil]
+[notificationCenter addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil]; \
+[notificationCenter addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil]; \
 
 #define UIKeyboardNotificationsUnobserve() \
 [[NSNotificationCenter defaultCenter] removeObserver:self];
@@ -114,6 +113,8 @@ NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     [_sendButton setTitleShadowColor:[UIColor colorWithRed:0.325f green:0.463f blue:0.675f alpha:1] forState:UIControlStateNormal];
     [_sendButton addTarget:self action:@selector(sendMessage) forControlEvents:UIControlEventTouchUpInside];
     [messageInputBar addSubview:_sendButton];
+    
+    
 
     [self.view addSubview:messageInputBar];
 
@@ -167,6 +168,27 @@ NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
      } completion:nil];
 }
 
+
+- (void)keyboardWillHide:(NSNotification *)notification {
+    NSTimeInterval animationDuration;
+    UIViewAnimationCurve animationCurve;
+    CGRect frameEnd;
+    NSDictionary *userInfo = [notification userInfo];
+    [[userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey] getValue:&animationCurve];
+    [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&animationDuration];
+    [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] getValue:&frameEnd];
+    
+    //    NSLog(@"animationDuration: %f", animationDuration); // TODO: Why 0.35 on viewDidLoad?
+    [UIView animateWithDuration:animationDuration delay:0.0 options:(UIViewAnimationOptionsFromCurve(animationCurve) | UIViewAnimationOptionBeginFromCurrentState) animations:^{
+        CGFloat viewHeight = [self.view convertRect:frameEnd fromView:nil].origin.y;
+        UIView *messageInputBar = _textView.superview;
+        UIViewSetFrameY(messageInputBar, viewHeight-messageInputBar.frame.size.height);
+        _tableView.contentInset = _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, self.view.frame.size.height-viewHeight, 0);
+        [self scrollToBottomAnimated:NO];
+    } completion:nil];
+}
+
+
 - (void)scrollToBottomAnimated:(BOOL)animated {
     NSInteger numberOfRows = [_tableView numberOfRowsInSection:0];
     if (numberOfRows) {
@@ -180,12 +202,12 @@ NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     // Autocomplete text before sending. @hack
     [_textView resignFirstResponder];
     [_textView becomeFirstResponder];
+    [_textView resignFirstResponder];
 
     // Send message.
     // TODO: Prevent this message from getting saved to Core Data if I hit back.
-    ACMessage *message = [NSEntityDescription insertNewObjectForEntityForName:@"ACMessage" inManagedObjectContext:_managedObjectContext];
+    [ACMessage sendMessage:_textView.text];
 
-    // hubot send message
     _textView.text = nil;
     [self textViewDidChange:_textView];
 }

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ACMessagesViewController.h"
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -19,6 +19,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    
+    ACMessagesViewController *messagesViewController = [[ACMessagesViewController alloc] initWithNibName:nil bundle:nil];
+    messagesViewController.title = @"hubot";
+    messagesViewController.managedObjectContext = [self managedObjectContext];
+    UINavigationController * nvc = [[UINavigationController alloc] initWithRootViewController:messagesViewController];
+    self.window.rootViewController = nvc;
     [self.window makeKeyAndVisible];
     return YES;
 }
