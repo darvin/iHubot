@@ -16,3 +16,6 @@
 [submodule "Vendor/OLImageView"]
 	path = Vendor/OLImageView
 	url = https://github.com/ondalabs/OLImageView.git
+[submodule "Vendor/LBYouTubeView"]
+	path = Vendor/LBYouTubeView
+	url = https://github.com/larcus94/LBYouTubeView.git

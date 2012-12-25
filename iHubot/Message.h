@@ -1,6 +1,5 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import "NSBubbleData.h"
 
 @class ACConversation;
 
@@ -10,5 +9,4 @@
 @property (nonatomic, retain) NSString * text;
 @property (nonatomic, retain) NSString * user;
 +(id)sendMessage:(NSString*) messageText;
--(NSBubbleData*) bubbleData;
 @end

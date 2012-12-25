@@ -19,6 +19,32 @@
 #import "UIBubbleTableViewDataSource.h"
 #import "NSBubbleData.h"
 #import "Message.h"
+#import "UIImageView+WebCache.h"
+#import "OLImageView.h"
+#import "LBYouTubePlayerController.h"
+
+
+@interface NSString (JRStringAdditions)
+
+- (BOOL)containsString:(NSString *)string;
+- (BOOL)containsString:(NSString *)string
+               options:(NSStringCompareOptions) options;
+
+@end
+
+@implementation NSString (JRStringAdditions)
+
+- (BOOL)containsString:(NSString *)string
+               options:(NSStringCompareOptions)options {
+    NSRange rng = [self rangeOfString:string options:options];
+    return rng.location != NSNotFound;
+}
+
+- (BOOL)containsString:(NSString *)string {
+    return [self containsString:string options:0];
+}
+
+@end
 
 @interface ViewController ()
 {
@@ -91,7 +117,7 @@
 - (NSBubbleData *)bubbleTableView:(UIBubbleTableView *)tableView dataForRow:(NSInteger)row
 {
     Message* message = [self.fetchedResultsController objectAtIndexPath:[NSIndexPath indexPathForRow:row inSection:0]];
-    return [message bubbleData];
+    return [self bubbleDataForMessage:message];
 }
 
 #pragma mark - Keyboard events
@@ -234,5 +260,67 @@
     }
 }
 */
+
+
+
+-(UIView*)viewForURL:(NSURL*) url {
+    UIView* view=nil;
+    if ([@[@"jpg", @"jpeg", @"png"] containsObject:[url pathExtension]]) {
+        UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [imageView setImageWithURL:url];
+        view = imageView;
+    } else if ([@[@"gif"] containsObject:[url pathExtension]]) {
+        OLImageView* imageView = [[OLImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [imageView setImageWithURL:url];
+        view = imageView;
+        NSLog(@"%@",url);
+    } else if ([[url absoluteString] containsString:@"youtube"]) {
+        LBYouTubePlayerController* controller = [[LBYouTubePlayerController alloc] initWithYouTubeURL:[NSURL URLWithString:@"http://www.youtube.com/watch?v=1fTIhC1WSew&list=FLEYfH4kbq85W_CiOTuSjf8w&feature=mh_lolz"] quality:LBYouTubeVideoQualityLarge];
+        
+        controller.view.frame = CGRectMake(0.0f, 0.0f, 200.0f, 200.0f);
+//        [self addChildViewController:controller];
+        view = controller.view;
+    }
+    
+    
+    
+    
+    
+    return view;
+}
+
+
+-(NSBubbleData*) bubbleDataForMessage:(Message*)message {
+    NSBubbleData * bubble;
+    
+    
+    NSBubbleType bubbleType = [message.user isEqualToString:@"me"]?BubbleTypeMine:BubbleTypeSomeoneElse;
+    
+    
+    NSError *error = NULL;
+    NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink
+                                                               error:&error];
+    NSArray* matches = [detector matchesInString:message.text
+                                         options:0
+                                           range:NSMakeRange(0, [message.text length])];
+    if (![matches count]) {
+        
+        bubble = [NSBubbleData dataWithText:message.text date:message.sentDate type:bubbleType];
+    } else {
+        NSTextCheckingResult *match = matches[0];
+        //        NSRange matchRange = [match range];
+        //        if ([match resultType] == NSTextCheckingTypeLink) {
+        NSURL *url = [match URL];
+        bubble = [NSBubbleData dataWithView:[self viewForURL:url] date:message.sentDate type:bubbleType insets:UIEdgeInsetsMake(10, 10, 10, 10)];
+        
+        
+    }
+    
+    
+    return bubble;
+    
+}
 
 @end

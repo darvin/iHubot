@@ -3,8 +3,6 @@
 #import "AFHTTPClient.h"    
 #import "AFJSONRequestOperation.h"
 #import "UIDevice+IdentifierAddition.h"
-#import "UIImageView+WebCache.h"
-#import "OLImageView.h"
 
 #define SERVER_LINK @"http://ihubot.herokuapp.com"
 //#define SERVER_LINK @"http://127.0.0.1:8080"
@@ -79,56 +77,4 @@ typedef enum {
 }
 
 
-+(UIView*)viewForURL:(NSURL*) url {
-    UIView* view;
-    if ([@[@"jpg", @"jpeg", @"png"] containsObject:[url pathExtension]]) {
-        UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
-        imageView.contentMode = UIViewContentModeScaleAspectFit;
-        [imageView setImageWithURL:url];
-        view = imageView;
-    } else if ([@[@"gif"] containsObject:[url pathExtension]]) {
-        OLImageView* imageView = [[OLImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
-        imageView.contentMode = UIViewContentModeScaleAspectFit;
-        [imageView setImageWithURL:url];
-        view = imageView;
-        NSLog(@"%@",url);
-    }
-    
-    
-
-    
-    return view;
-}
-
-
--(NSBubbleData*) bubbleData {
-    NSBubbleData * bubble;
-    
-    
-    NSBubbleType bubbleType = [self.user isEqualToString:@"me"]?BubbleTypeMine:BubbleTypeSomeoneElse;
-    
-    
-    NSError *error = NULL;
-    NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink
-                                                               error:&error];
-    NSArray* matches = [detector matchesInString:self.text
-                                                           options:0
-                                                             range:NSMakeRange(0, [self.text length])];
-    if (![matches count]) {
-        
-        bubble = [NSBubbleData dataWithText:self.text date:self.sentDate type:bubbleType];
-    } else {
-        NSTextCheckingResult *match = matches[0];
-//        NSRange matchRange = [match range];
-//        if ([match resultType] == NSTextCheckingTypeLink) {
-        NSURL *url = [match URL];
-        bubble = [NSBubbleData dataWithView:[[self class] viewForURL:url] date:self.sentDate type:bubbleType insets:UIEdgeInsetsMake(10, 10, 10, 10)];
-
-        
-    }
-
-    
-    return bubble;
-
-}
 @end
