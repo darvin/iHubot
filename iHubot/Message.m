@@ -3,6 +3,7 @@
 #import "AFHTTPClient.h"    
 #import "AFJSONRequestOperation.h"
 #import "UIDevice+IdentifierAddition.h"
+#import "UIImageView+WebCache.h"
 
 
 //#define SERVER_LINK @"http://ihubot.herokuapp.com"
@@ -78,6 +79,19 @@ typedef enum {
 }
 
 
++(UIView*)viewForURL:(NSURL*) url {
+    UIView* view;
+    if ([@[@"jpg", @"jpeg", @"png"] containsObject:[url pathExtension]]) {
+        UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+        [imageView setImageWithURL:url];
+        view = imageView;
+    }
+
+    
+    return view;
+}
+
+
 -(NSBubbleData*) bubbleData {
     NSBubbleData * bubble;
     
@@ -86,7 +100,7 @@ typedef enum {
     
     
     NSError *error = NULL;
-    NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink|NSTextCheckingTypePhoneNumber
+    NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink
                                                                error:&error];
     NSArray* matches = [detector matchesInString:self.text
                                                            options:0
@@ -97,13 +111,11 @@ typedef enum {
     } else {
         NSTextCheckingResult *match = matches[0];
 //        NSRange matchRange = [match range];
-        if ([match resultType] == NSTextCheckingTypeLink) {
-            NSURL *url = [match URL];
-            UIView* view;
-            if ([@[@"jpg", @"jpeg", @"png"] containsObject:[url lastPathComponent]]) {
-                
-            }
-        }
+//        if ([match resultType] == NSTextCheckingTypeLink) {
+        NSURL *url = [match URL];
+        bubble = [NSBubbleData dataWithView:[[self class] viewForURL:url] date:self.sentDate type:bubbleType insets:UIEdgeInsetsMake(10, 10, 10, 10)];
+
+        
     }
 
     
