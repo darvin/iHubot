@@ -7,8 +7,9 @@
         <attribute name="text" attributeType="String" minValueString="1">
             <userInfo/>
         </attribute>
+        <attribute name="user" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="ACMessage" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="ACMessage" positionX="160" positionY="192" width="128" height="90"/>
     </elements>
 </model>

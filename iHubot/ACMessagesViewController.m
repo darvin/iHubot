@@ -324,7 +324,7 @@ NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
 
     // Configure messageBackgroundImageView & messageTextLabel.
     messageTextLabel.text = message.text;
-    if (indexPath.row % 3) { // right message
+    if ([[message user] isEqualToString:@"me"]) { // right message
         messageBackgroundImageView.frame = CGRectMake(_tableView.frame.size.width-messageTextLabelSize.width-34, messageSentDateLabelHeight+MessageFontSize-13, messageTextLabelSize.width+34, messageTextLabelSize.height+12);
         messageBackgroundImageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
         messageBackgroundImageView.image = _messageBubbleBlue;
