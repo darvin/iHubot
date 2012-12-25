@@ -13,3 +13,6 @@
 [submodule "Vendor/SDWebImage"]
 	path = Vendor/SDWebImage
 	url = https://github.com/rs/SDWebImage.git
+[submodule "Vendor/OLImageView"]
+	path = Vendor/OLImageView
+	url = https://github.com/ondalabs/OLImageView.git

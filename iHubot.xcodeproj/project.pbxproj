@@ -89,6 +89,10 @@
 		57F2112A1689EB4E0084E742 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F2111F1689EB4E0084E742 /* UIButton+WebCache.m */; };
 		57F2112B1689EB4E0084E742 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F211211689EB4E0084E742 /* UIImageView+WebCache.m */; };
 		57F2112D1689ECDD0084E742 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F2112C1689ECDD0084E742 /* ImageIO.framework */; };
+		57F2115E1689EF7E0084E742 /* AFImageRequestOperation+OLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F211311689EF7E0084E742 /* AFImageRequestOperation+OLImage.m */; };
+		57F211611689EF7E0084E742 /* OLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F211351689EF7E0084E742 /* OLImage.m */; };
+		57F211621689EF7E0084E742 /* OLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F211371689EF7E0084E742 /* OLImageView.m */; };
+		57F211821689F0220084E742 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F211811689F0220084E742 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -247,6 +251,13 @@
 		57F211201689EB4E0084E742 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		57F211211689EB4E0084E742 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		57F2112C1689ECDD0084E742 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		57F211301689EF7E0084E742 /* AFImageRequestOperation+OLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFImageRequestOperation+OLImage.h"; sourceTree = "<group>"; };
+		57F211311689EF7E0084E742 /* AFImageRequestOperation+OLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFImageRequestOperation+OLImage.m"; sourceTree = "<group>"; };
+		57F211341689EF7E0084E742 /* OLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLImage.h; sourceTree = "<group>"; };
+		57F211351689EF7E0084E742 /* OLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLImage.m; sourceTree = "<group>"; };
+		57F211361689EF7E0084E742 /* OLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLImageView.h; sourceTree = "<group>"; };
+		57F211371689EF7E0084E742 /* OLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLImageView.m; sourceTree = "<group>"; };
+		57F211811689F0220084E742 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +265,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57F211821689F0220084E742 /* MobileCoreServices.framework in Frameworks */,
 				57F2112D1689ECDD0084E742 /* ImageIO.framework in Frameworks */,
 				57F20F5B1689B4E30084E742 /* UIKit.framework in Frameworks */,
 				57F20F5D1689B4E30084E742 /* Foundation.framework in Frameworks */,
@@ -300,6 +312,7 @@
 		57F20F591689B4E30084E742 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				57F211811689F0220084E742 /* MobileCoreServices.framework */,
 				57F2112C1689ECDD0084E742 /* ImageIO.framework */,
 				57F20F5A1689B4E30084E742 /* UIKit.framework */,
 				57F20F5C1689B4E30084E742 /* Foundation.framework */,
@@ -362,6 +375,7 @@
 		57F20FAC1689B7510084E742 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				57F2112E1689EF7E0084E742 /* OLImageView */,
 				57F2110C1689EB4E0084E742 /* SDWebImage */,
 				57F210AE1689DB040084E742 /* UIBubbleTableView */,
 				57F210831689CD5C0084E742 /* UIDevice-with-UniqueIdentifier-for-iOS-5 */,
@@ -538,6 +552,27 @@
 			);
 			name = SDWebImage;
 			path = SDWebImage/SDWebImage;
+			sourceTree = "<group>";
+		};
+		57F2112E1689EF7E0084E742 /* OLImageView */ = {
+			isa = PBXGroup;
+			children = (
+				57F2112F1689EF7E0084E742 /* Categories */,
+				57F211341689EF7E0084E742 /* OLImage.h */,
+				57F211351689EF7E0084E742 /* OLImage.m */,
+				57F211361689EF7E0084E742 /* OLImageView.h */,
+				57F211371689EF7E0084E742 /* OLImageView.m */,
+			);
+			path = OLImageView;
+			sourceTree = "<group>";
+		};
+		57F2112F1689EF7E0084E742 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				57F211301689EF7E0084E742 /* AFImageRequestOperation+OLImage.h */,
+				57F211311689EF7E0084E742 /* AFImageRequestOperation+OLImage.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -747,6 +782,9 @@
 				57F211291689EB4E0084E742 /* SDWebImagePrefetcher.m in Sources */,
 				57F2112A1689EB4E0084E742 /* UIButton+WebCache.m in Sources */,
 				57F2112B1689EB4E0084E742 /* UIImageView+WebCache.m in Sources */,
+				57F2115E1689EF7E0084E742 /* AFImageRequestOperation+OLImage.m in Sources */,
+				57F211611689EF7E0084E742 /* OLImage.m in Sources */,
+				57F211621689EF7E0084E742 /* OLImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

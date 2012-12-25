@@ -4,10 +4,10 @@
 #import "AFJSONRequestOperation.h"
 #import "UIDevice+IdentifierAddition.h"
 #import "UIImageView+WebCache.h"
+#import "OLImageView.h"
 
-
-//#define SERVER_LINK @"http://ihubot.herokuapp.com"
-#define SERVER_LINK @"http://127.0.0.1:8080"
+#define SERVER_LINK @"http://ihubot.herokuapp.com"
+//#define SERVER_LINK @"http://127.0.0.1:8080"
 
 @implementation Message
 
@@ -86,7 +86,15 @@ typedef enum {
         imageView.contentMode = UIViewContentModeScaleAspectFit;
         [imageView setImageWithURL:url];
         view = imageView;
+    } else if ([@[@"gif"] containsObject:[url pathExtension]]) {
+        OLImageView* imageView = [[OLImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [imageView setImageWithURL:url];
+        view = imageView;
+        NSLog(@"%@",url);
     }
+    
+    
 
     
     return view;
