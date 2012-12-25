@@ -24,7 +24,7 @@
 		57F20F811689B4E30084E742 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F20F601689B4E30084E742 /* CoreData.framework */; };
 		57F20F891689B4E30084E742 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57F20F871689B4E30084E742 /* InfoPlist.strings */; };
 		57F20F8C1689B4E30084E742 /* iHubotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F20F8B1689B4E30084E742 /* iHubotTests.m */; };
-		57F20F9C1689B55C0084E742 /* ACMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F20F971689B55C0084E742 /* ACMessage.m */; };
+		57F20F9C1689B55C0084E742 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F20F971689B55C0084E742 /* Message.m */; };
 		57F20F9D1689B55C0084E742 /* ACMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F20F991689B55C0084E742 /* ACMessagesViewController.m */; };
 		57F20F9E1689B55C0084E742 /* ACPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F20F9B1689B55C0084E742 /* ACPlaceholderTextView.m */; };
 		57F2104C1689C5610084E742 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210321689C5610084E742 /* Default.png */; };
@@ -127,8 +127,8 @@
 		57F20F8A1689B4E30084E742 /* iHubotTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iHubotTests.h; sourceTree = "<group>"; };
 		57F20F8B1689B4E30084E742 /* iHubotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iHubotTests.m; sourceTree = "<group>"; };
 		57F20F951689B55C0084E742 /* AcaniChatDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcaniChatDefines.h; sourceTree = "<group>"; };
-		57F20F961689B55C0084E742 /* ACMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMessage.h; sourceTree = "<group>"; };
-		57F20F971689B55C0084E742 /* ACMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMessage.m; sourceTree = "<group>"; };
+		57F20F961689B55C0084E742 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		57F20F971689B55C0084E742 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		57F20F981689B55C0084E742 /* ACMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMessagesViewController.h; sourceTree = "<group>"; };
 		57F20F991689B55C0084E742 /* ACMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMessagesViewController.m; sourceTree = "<group>"; };
 		57F20F9A1689B55C0084E742 /* ACPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPlaceholderTextView.h; sourceTree = "<group>"; };
@@ -248,8 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				57F20F951689B55C0084E742 /* AcaniChatDefines.h */,
-				57F20F961689B55C0084E742 /* ACMessage.h */,
-				57F20F971689B55C0084E742 /* ACMessage.m */,
+				57F20F961689B55C0084E742 /* Message.h */,
+				57F20F971689B55C0084E742 /* Message.m */,
 				57F20F981689B55C0084E742 /* ACMessagesViewController.h */,
 				57F20F991689B55C0084E742 /* ACMessagesViewController.m */,
 				57F20F9A1689B55C0084E742 /* ACPlaceholderTextView.h */,
@@ -572,7 +572,7 @@
 				57F20F691689B4E30084E742 /* main.m in Sources */,
 				57F20F6D1689B4E30084E742 /* AppDelegate.m in Sources */,
 				57F20F761689B4E30084E742 /* iHubot.xcdatamodeld in Sources */,
-				57F20F9C1689B55C0084E742 /* ACMessage.m in Sources */,
+				57F20F9C1689B55C0084E742 /* Message.m in Sources */,
 				57F20F9D1689B55C0084E742 /* ACMessagesViewController.m in Sources */,
 				57F20F9E1689B55C0084E742 /* ACPlaceholderTextView.m in Sources */,
 				57F2107A1689CBCB0084E742 /* AFHTTPClient.m in Sources */,

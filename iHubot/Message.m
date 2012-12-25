@@ -1,9 +1,9 @@
-#import "ACMessage.h"
+#import "Message.h"
 #import "AppDelegate.h"
 #import "AFHTTPClient.h"    
 #import "AFJSONRequestOperation.h"
 #import "UIDevice+IdentifierAddition.h"
-@implementation ACMessage
+@implementation Message
 
 @dynamic sentDate;
 @dynamic text;
@@ -27,7 +27,7 @@
 }
 
 +(id)sendMessage:(NSString *)messageText {
-    ACMessage * message = [self messageWithText:[self preprocessRequestText:messageText]];
+    Message * message = [self messageWithText:[self preprocessRequestText:messageText]];
     [message send];
     return message;
 }
@@ -39,7 +39,7 @@
 }
 
 +(id)messageWithText:(NSString*)text {
-    ACMessage *message = [NSEntityDescription insertNewObjectForEntityForName:@"ACMessage" inManagedObjectContext:((AppDelegate*)[[UIApplication sharedApplication] delegate]).managedObjectContext];
+    Message *message = [NSEntityDescription insertNewObjectForEntityForName:@"Message" inManagedObjectContext:((AppDelegate*)[[UIApplication sharedApplication] delegate]).managedObjectContext];
     message.text = text;
     message.sentDate = [NSDate date];
 
@@ -52,7 +52,7 @@
         NSError *error = nil;
         id json = [NSJSONSerialization JSONObjectWithData:responseObject options:nil error:&error];
         if (!error) {
-            ACMessage * message = [[self class] messageWithText:json[@"message"]];
+            Message * message = [[self class] messageWithText:json[@"message"]];
             message.user = @"hubot";
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

@@ -2,7 +2,7 @@
 #import "AcaniChatDefines.h"
 #import "ACMessagesViewController.h"
 #import "ACPlaceholderTextView.h"
-#import "ACMessage.h"
+#import "Message.h"
 #import "UIView+CocoaPlant.h"
 
 // TODO: Rename to CHAT_BAR_HEIGHT_1, etc.
@@ -206,7 +206,7 @@ NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
 
     // Send message.
     // TODO: Prevent this message from getting saved to Core Data if I hit back.
-    [ACMessage sendMessage:_textView.text];
+    [Message sendMessage:_textView.text];
 
     _textView.text = nil;
     [self textViewDidChange:_textView];
@@ -221,7 +221,7 @@ NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 //    NSLog(@"heightForRowAtIndexPath: %@", indexPath);
 
-    ACMessage *message = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    Message *message = [self.fetchedResultsController objectAtIndexPath:indexPath];
 
     NSArray *messageDetails = nil;
     if ([_heightForRow count] > indexPath.row) {
@@ -301,7 +301,7 @@ NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     }
 
     // Configure cell with message.
-    ACMessage *message = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    Message *message = [self.fetchedResultsController objectAtIndexPath:indexPath];
 
     // Configure messageSentDateLabel.
     if (messageSentDateLabelHeight) {
@@ -381,7 +381,7 @@ NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
 
 - (NSFetchedResultsController *)fetchedResultsController {
     if (_fetchedResultsController) return _fetchedResultsController;
-    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"ACMessage"];
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Message"];
     NSError __autoreleasing *error = nil;
     NSUInteger messagesCount = [_managedObjectContext countForFetchRequest:fetchRequest error:&error];
     NSAssert(messagesCount != NSNotFound, @"-[NSManagedObjectContext countForFetchRequest:error:] error:\n\n%@", error);

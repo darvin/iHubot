@@ -3,7 +3,7 @@
 
 @class ACConversation;
 
-@interface ACMessage : NSManagedObject
+@interface Message : NSManagedObject
 
 @property (nonatomic, retain) NSDate * sentDate;
 @property (nonatomic, retain) NSString * text;
