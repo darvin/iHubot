@@ -26,6 +26,7 @@
     messagesViewController.title = @"hubot";
     messagesViewController.managedObjectContext = [self managedObjectContext];
     UINavigationController * nvc = [[UINavigationController alloc] initWithRootViewController:messagesViewController];
+    nvc.navigationBarHidden = YES;
     self.window.rootViewController = nvc;
     [self.window makeKeyAndVisible];
     return YES;
