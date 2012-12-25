@@ -52,7 +52,6 @@
     IBOutlet UIView *textInputView;
     IBOutlet UITextField *textField;
 
-    NSMutableArray *bubbleData;
 }
 
 @end
@@ -63,16 +62,6 @@
 {
     [super viewDidLoad];
     
-    NSBubbleData *heyBubble = [NSBubbleData dataWithText:@"Hey, halloween is soon" date:[NSDate dateWithTimeIntervalSinceNow:-300] type:BubbleTypeSomeoneElse];
-    heyBubble.avatar = [UIImage imageNamed:@"avatar1.png"];
-
-    NSBubbleData *photoBubble = [NSBubbleData dataWithImage:[UIImage imageNamed:@"halloween.jpg"] date:[NSDate dateWithTimeIntervalSinceNow:-290] type:BubbleTypeSomeoneElse];
-    photoBubble.avatar = [UIImage imageNamed:@"avatar1.png"];
-    
-    NSBubbleData *replyBubble = [NSBubbleData dataWithText:@"Wow.. Really cool picture out there. iPhone 5 has really nice camera, yeah?" date:[NSDate dateWithTimeIntervalSinceNow:-5] type:BubbleTypeMine];
-    replyBubble.avatar = nil;
-    
-    bubbleData = [[NSMutableArray alloc] initWithObjects:heyBubble, photoBubble, replyBubble, nil];
     bubbleTable.bubbleDataSource = self;
     
     // The line below sets the snap interval in seconds. This defines how the bubbles will be grouped in time.
@@ -92,14 +81,21 @@
     //    - NSBubbleTypingTypeMe - shows "now typing" bubble on the right
     //    - NSBubbleTypingTypeNone - no "now typing" bubble
     
-    bubbleTable.typingBubble = NSBubbleTypingTypeSomebody;
+    bubbleTable.typingBubble = NSBubbleTypingTypeNobody;
     
     [bubbleTable reloadData];
     
     // Keyboard events
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasShown:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillBeHidden:) name:UIKeyboardWillHideNotification object:nil];
+}
+
+-(void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [Message sendMessage:@"hubot help"];
+
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -122,8 +118,14 @@
 
 #pragma mark - Keyboard events
 
-- (void)keyboardWasShown:(NSNotification*)aNotification
+- (void)keyboardDidShow:(NSNotification*)aNotification
 {
+    [self scrollToBottomAnimated:YES];
+}
+
+- (void)keyboardWillShow:(NSNotification*)aNotification
+{
+    bubbleTable.typingBubble = NSBubbleTypingTypeMe;
     NSDictionary* info = [aNotification userInfo];
     CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
 
@@ -141,6 +143,7 @@
 
 - (void)keyboardWillBeHidden:(NSNotification*)aNotification
 {
+
     NSDictionary* info = [aNotification userInfo];
     CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
     
@@ -160,12 +163,8 @@
 
 - (IBAction)sayPressed:(id)sender
 {
-    bubbleTable.typingBubble = NSBubbleTypingTypeNobody;
+    bubbleTable.typingBubble = NSBubbleTypingTypeSomebody;
 
-    NSBubbleData *sayBubble = [NSBubbleData dataWithText:textField.text date:[NSDate dateWithTimeIntervalSinceNow:0] type:BubbleTypeMine];
-    [bubbleData addObject:sayBubble];
-
-    
     
     [Message sendMessage:textField.text];
     
@@ -221,6 +220,7 @@
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
 //    [bubbleTable endUpdates];
 //    [self scrollToBottomAnimated:YES];
+
     [bubbleTable reloadData];
     [self scrollToBottomAnimated:YES];
 }
