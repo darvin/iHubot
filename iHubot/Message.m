@@ -3,18 +3,34 @@
 #import "AFHTTPClient.h"    
 #import "AFJSONRequestOperation.h"
 #import "UIDevice+IdentifierAddition.h"
+
+
+//#define SERVER_LINK @"http://ihubot.herokuapp.com"
+#define SERVER_LINK @"http://127.0.0.1:8080"
+
 @implementation Message
 
 @dynamic sentDate;
 @dynamic text;
 @dynamic user;
 
+
+typedef enum {
+    MessageContentTypeText,
+    MessageContentTypeGif,
+    MessageContentTypeImage,
+    MessageContentTypeYouTube
+} MessageContentType;
+
+
 +(AFHTTPClient*) client {
+
+    
     static AFHTTPClient* client = nil;
     @synchronized(self) {
         if (!client){
             
-            client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://ihubot.herokuapp.com"]];
+            client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:SERVER_LINK]];
 //            [client setDefaultHeader:@"Accept" value:@"application/json"];
             [client setParameterEncoding:AFJSONParameterEncoding];
             [client registerHTTPOperationClass:[AFJSONRequestOperation class]];
@@ -59,5 +75,39 @@
         NSLog(@"%@",error);
         
     }];
+}
+
+
+-(NSBubbleData*) bubbleData {
+    NSBubbleData * bubble;
+    
+    
+    NSBubbleType bubbleType = [self.user isEqualToString:@"me"]?BubbleTypeMine:BubbleTypeSomeoneElse;
+    
+    
+    NSError *error = NULL;
+    NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink|NSTextCheckingTypePhoneNumber
+                                                               error:&error];
+    NSArray* matches = [detector matchesInString:self.text
+                                                           options:0
+                                                             range:NSMakeRange(0, [self.text length])];
+    if (![matches count]) {
+        
+        bubble = [NSBubbleData dataWithText:self.text date:self.sentDate type:bubbleType];
+    } else {
+        NSTextCheckingResult *match = matches[0];
+//        NSRange matchRange = [match range];
+        if ([match resultType] == NSTextCheckingTypeLink) {
+            NSURL *url = [match URL];
+            UIView* view;
+            if ([@[@"jpg", @"jpeg", @"png"] containsObject:[url lastPathComponent]]) {
+                
+            }
+        }
+    }
+
+    
+    return bubble;
+
 }
 @end

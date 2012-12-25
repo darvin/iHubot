@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ACMessagesViewController.h"
+#import "ViewController.h"
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -22,9 +22,8 @@
     
     
     
-    ACMessagesViewController *messagesViewController = [[ACMessagesViewController alloc] initWithNibName:nil bundle:nil];
-    messagesViewController.title = @"hubot";
-    messagesViewController.managedObjectContext = [self managedObjectContext];
+    ViewController *messagesViewController = [[ViewController alloc] initWithNibName:nil bundle:nil];
+    messagesViewController.managedObjectContext=self.managedObjectContext;
     UINavigationController * nvc = [[UINavigationController alloc] initWithRootViewController:messagesViewController];
     nvc.navigationBarHidden = YES;
     self.window.rootViewController = nvc;

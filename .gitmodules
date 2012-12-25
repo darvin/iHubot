@@ -7,3 +7,9 @@
 [submodule "Vendor/UIDevice-with-UniqueIdentifier-for-iOS-5"]
 	path = Vendor/UIDevice-with-UniqueIdentifier-for-iOS-5
 	url = https://github.com/gekitz/UIDevice-with-UniqueIdentifier-for-iOS-5.git
+[submodule "Vendor/UIBubbleTableView"]
+	path = Vendor/UIBubbleTableView
+	url = https://github.com/AlexBarinov/UIBubbleTableView.git
+[submodule "Vendor/SDWebImage"]
+	path = Vendor/SDWebImage
+	url = https://github.com/rs/SDWebImage.git
