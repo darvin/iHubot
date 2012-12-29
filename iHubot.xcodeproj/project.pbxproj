@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5725E9CE168E998200FFACF9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5725E9CD168E998200FFACF9 /* Default.png */; };
+		5725E9D0168E998700FFACF9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5725E9CF168E998700FFACF9 /* Default@2x.png */; };
+		5725E9D2168E998A00FFACF9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5725E9D1168E998A00FFACF9 /* Default-568h@2x.png */; };
 		57F20F5B1689B4E30084E742 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F20F5A1689B4E30084E742 /* UIKit.framework */; };
 		57F20F5D1689B4E30084E742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F20F5C1689B4E30084E742 /* Foundation.framework */; };
 		57F20F5F1689B4E30084E742 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F20F5E1689B4E30084E742 /* CoreGraphics.framework */; };
@@ -96,6 +99,9 @@
 		57F211841689F5D80084E742 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F211831689F5D80084E742 /* MediaPlayer.framework */; };
 		57F211A61689F60D0084E742 /* LBYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F2118B1689F60D0084E742 /* LBYouTubeExtractor.m */; };
 		57F211A71689F60D0084E742 /* LBYouTubePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F2118D1689F60D0084E742 /* LBYouTubePlayerController.m */; };
+		57FD703E168E8E25006BA28E /* hubot.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FD703D168E8E25006BA28E /* hubot.png */; };
+		57FD7040168E8E27006BA28E /* hubot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FD703F168E8E27006BA28E /* hubot@2x.png */; };
+		57FD7042168E8EE4006BA28E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 57FD7041168E8EE4006BA28E /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,37 +112,12 @@
 			remoteGlobalIDString = 57F20F551689B4E30084E742;
 			remoteInfo = iHubot;
 		};
-		57F210181689B7510084E742 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 57F20FCE1689B7510084E742 /* CocoaPlant.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C90B0CB313F55026009C18B1;
-			remoteInfo = CocoaPlant;
-		};
-		57F2101A1689B7510084E742 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 57F20FCE1689B7510084E742 /* CocoaPlant.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C951D3E013F87926001D12CD;
-			remoteInfo = CocoaPlantApp;
-		};
-		57F2101C1689B7510084E742 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 57F20FCE1689B7510084E742 /* CocoaPlant.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C90B0CC313F55026009C18B1;
-			remoteInfo = CocoaPlantSpecs;
-		};
-		57F2101E1689B7640084E742 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 57F20FCE1689B7510084E742 /* CocoaPlant.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C90B0CB213F55026009C18B1;
-			remoteInfo = CocoaPlant;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5725E9CD168E998200FFACF9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5725E9CF168E998700FFACF9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5725E9D1168E998A00FFACF9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		57F20F561689B4E30084E742 /* iHubot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHubot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F20F5A1689B4E30084E742 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		57F20F5C1689B4E30084E742 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -160,7 +141,6 @@
 		57F20F8B1689B4E30084E742 /* iHubotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iHubotTests.m; sourceTree = "<group>"; };
 		57F20F961689B55C0084E742 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		57F20F971689B55C0084E742 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
-		57F20FCE1689B7510084E742 /* CocoaPlant.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CocoaPlant.xcodeproj; sourceTree = "<group>"; };
 		57F210321689C5610084E742 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		57F210331689C5610084E742 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		57F210341689C5610084E742 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -267,6 +247,9 @@
 		57F2118B1689F60D0084E742 /* LBYouTubeExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYouTubeExtractor.m; sourceTree = "<group>"; };
 		57F2118C1689F60D0084E742 /* LBYouTubePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYouTubePlayerController.h; sourceTree = "<group>"; };
 		57F2118D1689F60D0084E742 /* LBYouTubePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYouTubePlayerController.m; sourceTree = "<group>"; };
+		57FD703D168E8E25006BA28E /* hubot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hubot.png; sourceTree = "<group>"; };
+		57FD703F168E8E27006BA28E /* hubot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hubot@2x.png"; sourceTree = "<group>"; };
+		57FD7041168E8EE4006BA28E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +284,11 @@
 		57F20F4B1689B4E30084E742 = {
 			isa = PBXGroup;
 			children = (
+				5725E9D1168E998A00FFACF9 /* Default-568h@2x.png */,
+				5725E9CF168E998700FFACF9 /* Default@2x.png */,
+				5725E9CD168E998200FFACF9 /* Default.png */,
+				57FD703F168E8E27006BA28E /* hubot@2x.png */,
+				57FD703D168E8E25006BA28E /* hubot.png */,
 				57F210311689C5610084E742 /* Resources */,
 				57F20FAC1689B7510084E742 /* Vendor */,
 				57F20F621689B4E30084E742 /* iHubot */,
@@ -360,6 +348,7 @@
 				57F20F6E1689B4E30084E742 /* Default.png */,
 				57F20F701689B4E30084E742 /* Default@2x.png */,
 				57F20F721689B4E30084E742 /* Default-568h@2x.png */,
+				57FD7041168E8EE4006BA28E /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -392,27 +381,8 @@
 				57F210AE1689DB040084E742 /* UIBubbleTableView */,
 				57F210831689CD5C0084E742 /* UIDevice-with-UniqueIdentifier-for-iOS-5 */,
 				57F210661689CBCB0084E742 /* AFNetworking */,
-				57F20FAD1689B7510084E742 /* CocoaPlant */,
 			);
 			path = Vendor;
-			sourceTree = "<group>";
-		};
-		57F20FAD1689B7510084E742 /* CocoaPlant */ = {
-			isa = PBXGroup;
-			children = (
-				57F20FCE1689B7510084E742 /* CocoaPlant.xcodeproj */,
-			);
-			path = CocoaPlant;
-			sourceTree = "<group>";
-		};
-		57F20FCF1689B7510084E742 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				57F210191689B7510084E742 /* libCocoaPlant.a */,
-				57F2101B1689B7510084E742 /* CocoaPlantApp.app */,
-				57F2101D1689B7510084E742 /* CocoaPlantSpecs.octest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		57F210311689C5610084E742 /* Resources */ = {
@@ -621,7 +591,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				57F2101F1689B7640084E742 /* PBXTargetDependency */,
 			);
 			name = iHubot;
 			productName = iHubot;
@@ -666,12 +635,6 @@
 			mainGroup = 57F20F4B1689B4E30084E742;
 			productRefGroup = 57F20F571689B4E30084E742 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 57F20FCF1689B7510084E742 /* Products */;
-					ProjectRef = 57F20FCE1689B7510084E742 /* CocoaPlant.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				57F20F551689B4E30084E742 /* iHubot */,
@@ -679,30 +642,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		57F210191689B7510084E742 /* libCocoaPlant.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libCocoaPlant.a;
-			remoteRef = 57F210181689B7510084E742 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		57F2101B1689B7510084E742 /* CocoaPlantApp.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = CocoaPlantApp.app;
-			remoteRef = 57F2101A1689B7510084E742 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		57F2101D1689B7510084E742 /* CocoaPlantSpecs.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CocoaPlantSpecs.octest;
-			remoteRef = 57F2101C1689B7510084E742 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		57F20F541689B4E30084E742 /* Resources */ = {
@@ -750,6 +689,12 @@
 				57F210F81689DB040084E742 /* typingSomeone.png in Resources */,
 				57F210F91689DB040084E742 /* typingSomeone@2x.png in Resources */,
 				57F2110B1689DBAB0084E742 /* ViewController.xib in Resources */,
+				57FD703E168E8E25006BA28E /* hubot.png in Resources */,
+				57FD7040168E8E27006BA28E /* hubot@2x.png in Resources */,
+				57FD7042168E8EE4006BA28E /* Settings.bundle in Resources */,
+				5725E9CE168E998200FFACF9 /* Default.png in Resources */,
+				5725E9D0168E998700FFACF9 /* Default@2x.png in Resources */,
+				5725E9D2168E998A00FFACF9 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -838,11 +783,6 @@
 			target = 57F20F551689B4E30084E742 /* iHubot */;
 			targetProxy = 57F20F821689B4E30084E742 /* PBXContainerItemProxy */;
 		};
-		57F2101F1689B7640084E742 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CocoaPlant;
-			targetProxy = 57F2101E1689B7640084E742 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -924,12 +864,14 @@
 				GCC_PREFIX_HEADER = "iHubot/iHubot-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Vendor/CocoaPlant/CocoaPlant\"";
 				INFOPLIST_FILE = "iHubot/iHubot-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-force_load",
 					"${BUILT_PRODUCTS_DIR}/libCocoaPlant.a",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -941,12 +883,14 @@
 				GCC_PREFIX_HEADER = "iHubot/iHubot-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Vendor/CocoaPlant/CocoaPlant\"";
 				INFOPLIST_FILE = "iHubot/iHubot-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-force_load",
 					"${BUILT_PRODUCTS_DIR}/libCocoaPlant.a",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

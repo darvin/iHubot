@@ -4,8 +4,6 @@
 #import "AFJSONRequestOperation.h"
 #import "UIDevice+IdentifierAddition.h"
 
-#define SERVER_LINK @"http://ihubot.herokuapp.com"
-//#define SERVER_LINK @"http://127.0.0.1:8080"
 
 @implementation Message
 
@@ -28,8 +26,12 @@ typedef enum {
     static AFHTTPClient* client = nil;
     @synchronized(self) {
         if (!client){
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            NSString* serverUrl = [[NSUserDefaults standardUserDefaults] stringForKey:@"server_link"];
+            serverUrl = serverUrl?serverUrl:@"http://ihubot.herokuapp.com";
             
-            client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:SERVER_LINK]];
+            
+            client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:serverUrl]];
 //            [client setDefaultHeader:@"Accept" value:@"application/json"];
             [client setParameterEncoding:AFJSONParameterEncoding];
             [client registerHTTPOperationClass:[AFJSONRequestOperation class]];
