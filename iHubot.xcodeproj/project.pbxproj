@@ -30,8 +30,6 @@
 		57F20F9C1689B55C0084E742 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F20F971689B55C0084E742 /* Message.m */; };
 		57F2104C1689C5610084E742 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210321689C5610084E742 /* Default.png */; };
 		57F2104D1689C5610084E742 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210331689C5610084E742 /* Default@2x.png */; };
-		57F2104E1689C5610084E742 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210341689C5610084E742 /* Icon.png */; };
-		57F2104F1689C5610084E742 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210351689C5610084E742 /* Icon@2x.png */; };
 		57F210501689C5610084E742 /* MessageBubbleBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210361689C5610084E742 /* MessageBubbleBlue.png */; };
 		57F210511689C5610084E742 /* MessageBubbleBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210371689C5610084E742 /* MessageBubbleBlue@2x.png */; };
 		57F210521689C5610084E742 /* MessageBubbleGray.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F210381689C5610084E742 /* MessageBubbleGray.png */; };
@@ -654,8 +652,6 @@
 				57F20F731689B4E30084E742 /* Default-568h@2x.png in Resources */,
 				57F2104C1689C5610084E742 /* Default.png in Resources */,
 				57F2104D1689C5610084E742 /* Default@2x.png in Resources */,
-				57F2104E1689C5610084E742 /* Icon.png in Resources */,
-				57F2104F1689C5610084E742 /* Icon@2x.png in Resources */,
 				57F210501689C5610084E742 /* MessageBubbleBlue.png in Resources */,
 				57F210511689C5610084E742 /* MessageBubbleBlue@2x.png in Resources */,
 				57F210521689C5610084E742 /* MessageBubbleGray.png in Resources */,
@@ -843,7 +839,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -851,6 +847,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -865,11 +862,6 @@
 				HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Vendor/CocoaPlant/CocoaPlant\"";
 				INFOPLIST_FILE = "iHubot/iHubot-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-force_load",
-					"${BUILT_PRODUCTS_DIR}/libCocoaPlant.a",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -884,11 +876,6 @@
 				HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Vendor/CocoaPlant/CocoaPlant\"";
 				INFOPLIST_FILE = "iHubot/iHubot-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-force_load",
-					"${BUILT_PRODUCTS_DIR}/libCocoaPlant.a",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
