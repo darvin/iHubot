@@ -61,8 +61,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [Message sendMessage:@"hubot help"];
-    [Message sendMessage:@"hubot help"];
 
     self.fetchedResultsController = [self createFetchedResultsController];
     textField.delegate = self;
@@ -207,7 +205,6 @@
         NSLog(@"Unable to fetch messages: %@", error);
     }
     
-    NSArray *results = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
 
     return fetchedResultsController;
 }
