@@ -1,0 +1,1620 @@
+--- 
+classes: {}
+
+objectVersion: "46"
+archiveVersion: "1"
+objects: 
+  57F20F7F1689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F5A1689B4E30084E742
+  57F2105D1689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210431689C5610084E742
+  57F210F31689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210C81689DB040084E742
+  57F211231689EB4E0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F211101689EB4E0084E742
+  57F211011689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210DB1689DB040084E742
+    settings: 
+      COMPILER_FLAGS: -fno-objc-arc
+  57F211301689EF7E0084E742: 
+    path: AFImageRequestOperation+OLImage.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F2118D1689F60D0084E742: 
+    path: LBYouTubePlayerController.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F2112F1689EF7E0084E742: 
+    path: Categories
+    isa: PBXGroup
+    children: 
+    - 57F211301689EF7E0084E742
+    - 57F211311689EF7E0084E742
+    sourceTree: <group>
+  57F20F941689B4E30084E742: 
+    isa: XCBuildConfiguration
+    buildSettings: 
+      WRAPPER_EXTENSION: octest
+      FRAMEWORK_SEARCH_PATHS: 
+      - "\"$(SDKROOT)/Developer/Library/Frameworks\""
+      - "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\""
+      TEST_HOST: $(BUNDLE_LOADER)
+      GCC_PRECOMPILE_PREFIX_HEADER: "YES"
+      INFOPLIST_FILE: iHubotTests/iHubotTests-Info.plist
+      BUNDLE_LOADER: $(BUILT_PRODUCTS_DIR)/iHubot.app/iHubot
+      GCC_PREFIX_HEADER: iHubot/iHubot-Prefix.pch
+      PRODUCT_NAME: $(TARGET_NAME)
+    name: Release
+  57F20F631689B4E30084E742: 
+    isa: PBXGroup
+    name: Supporting Files
+    children: 
+    - 57F20F641689B4E30084E742
+    - 57F20F651689B4E30084E742
+    - 57F20F681689B4E30084E742
+    - 57F20F6A1689B4E30084E742
+    - 57F20F6E1689B4E30084E742
+    - 57F20F701689B4E30084E742
+    - 57F20F721689B4E30084E742
+    - 57FD7041168E8EE4006BA28E
+    sourceTree: <group>
+  57F20F541689B4E30084E742: 
+    isa: PBXResourcesBuildPhase
+    buildActionMask: "2147483647"
+    files: 
+    - 57F20F671689B4E30084E742
+    - 57F20F6F1689B4E30084E742
+    - 57F20F711689B4E30084E742
+    - 57F20F731689B4E30084E742
+    - 57F210501689C5610084E742
+    - 57F210511689C5610084E742
+    - 57F210521689C5610084E742
+    - 57F210531689C5610084E742
+    - 57F210541689C5610084E742
+    - 57F210551689C5610084E742
+    - 57F210561689C5610084E742
+    - 57F210571689C5610084E742
+    - 57F210581689C5610084E742
+    - 57F210591689C5610084E742
+    - 57F2105A1689C5610084E742
+    - 57F2105B1689C5610084E742
+    - 57F2105C1689C5610084E742
+    - 57F2105D1689C5610084E742
+    - 57F2105E1689C5610084E742
+    - 57F2105F1689C5610084E742
+    - 57F210601689C5610084E742
+    - 57F210611689C5610084E742
+    - 57F210621689C5610084E742
+    - 57F210631689C5610084E742
+    - 57F210641689C5610084E742
+    - 57F210651689C5610084E742
+    - 57F210F01689DB040084E742
+    - 57F210F11689DB040084E742
+    - 57F210F21689DB040084E742
+    - 57F210F31689DB040084E742
+    - 57F210F41689DB040084E742
+    - 57F210F51689DB040084E742
+    - 57F210F61689DB040084E742
+    - 57F210F71689DB040084E742
+    - 57F210F81689DB040084E742
+    - 57F210F91689DB040084E742
+    - 57F2110B1689DBAB0084E742
+    - 57FD703E168E8E25006BA28E
+    - 57FD7040168E8E27006BA28E
+    - 57FD7042168E8EE4006BA28E
+    - 5725E9CE168E998200FFACF9
+    - 5725E9D0168E998700FFACF9
+    - 5725E9D2168E998A00FFACF9
+    runOnlyForDeploymentPostprocessing: "0"
+  57F210D61689DB040084E742: 
+    path: NSBubbleData.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F210861689CD5C0084E742: 
+    path: NSString+MD5Addition.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  5725E9D1168E998A00FFACF9: 
+    path: Default-568h@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F20F7A1689B4E30084E742: 
+    inputPaths: []
+
+    buildActionMask: "2147483647"
+    shellPath: /bin/sh
+    isa: PBXShellScriptBuildPhase
+    outputPaths: []
+
+    runOnlyForDeploymentPostprocessing: "0"
+    shellScript: |
+      # Run the unit tests in this test bundle.
+      "${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests"
+
+    files: []
+
+  57F2107B1689CBCB0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2106A1689CBCB0084E742
+  57F210551689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2103B1689C5610084E742
+  57F20F771689B4E30084E742: 
+    isa: PBXSourcesBuildPhase
+    buildActionMask: "2147483647"
+    files: 
+    - 57F20F8C1689B4E30084E742
+    runOnlyForDeploymentPostprocessing: "0"
+  57F210F91689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210CE1689DB040084E742
+  57F210781689CBCB0084E742: 
+    path: UIImageView+AFNetworking.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F20F681689B4E30084E742: 
+    path: main.m
+    isa: PBXFileReference
+    lastKnownFileType: sourcecode.c.objc
+    sourceTree: <group>
+  57F210461689C5610084E742: 
+    path: SendButtonHighlighted.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F210A01689CD5C0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210861689CD5C0084E742
+    settings: 
+      COMPILER_FLAGS: -fno-objc-arc
+  57F2111D1689EB4E0084E742: 
+    path: SDWebImagePrefetcher.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F210691689CBCB0084E742: 
+    path: AFHTTPRequestOperation.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F211361689EF7E0084E742: 
+    path: OLImageView.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F211851689F60D0084E742: 
+    path: LBYouTubeView
+    isa: PBXGroup
+    children: 
+    - 57F211881689F60D0084E742
+    sourceTree: <group>
+  57F211811689F0220084E742: 
+    path: System/Library/Frameworks/MobileCoreServices.framework
+    isa: PBXFileReference
+    name: MobileCoreServices.framework
+    lastKnownFileType: wrapper.framework
+    sourceTree: SDKROOT
+  57F210E01689DB040084E742: 
+    path: UIBubbleTypingTableViewCell.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F20F8E1689B4E30084E742: 
+    isa: XCBuildConfiguration
+    buildSettings: 
+      CLANG_ENABLE_OBJC_ARC: "YES"
+      VALIDATE_PRODUCT: "YES"
+      OTHER_CFLAGS: -DNS_BLOCK_ASSERTIONS=1
+      GCC_WARN_UNUSED_VARIABLE: "YES"
+      GCC_WARN_UNINITIALIZED_AUTOS: "YES"
+      GCC_C_LANGUAGE_STANDARD: gnu99
+      TARGETED_DEVICE_FAMILY: "1,2"
+      CLANG_WARN__DUPLICATE_METHOD_MATCH: "YES"
+      CLANG_WARN_EMPTY_BODY: "YES"
+      CLANG_CXX_LANGUAGE_STANDARD: gnu++0x
+      PROVISIONING_PROFILE[sdk=iphoneos*]: ""
+      ALWAYS_SEARCH_USER_PATHS: "NO"
+      CODE_SIGN_IDENTITY[sdk=iphoneos*]: iPhone Distribution
+      SDKROOT: iphoneos
+      GCC_WARN_ABOUT_RETURN_TYPE: "YES"
+      IPHONEOS_DEPLOYMENT_TARGET: "6.0"
+      COPY_PHASE_STRIP: "YES"
+      CLANG_CXX_LIBRARY: libc++
+    name: Release
+  57F20F5D1689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F5C1689B4E30084E742
+  57F20F811689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F601689B4E30084E742
+  57F210821689CBCB0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210791689CBCB0084E742
+  57F20F721689B4E30084E742: 
+    path: Default-568h@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57FD7042168E8EE4006BA28E: 
+    isa: PBXBuildFile
+    fileRef: 57FD7041168E8EE4006BA28E
+  57F210501689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210361689C5610084E742
+  57F210F41689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210C91689DB040084E742
+  57F210731689CBCB0084E742: 
+    path: AFPropertyListRequestOperation.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F211241689EB4E0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F211121689EB4E0084E742
+  57F210411689C5610084E742: 
+    path: MessageInputFieldBackground@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F211021689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210DD1689DB040084E742
+    settings: 
+      COMPILER_FLAGS: -fno-objc-arc
+  57F211621689EF7E0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F211371689EF7E0084E742
+  57F211311689EF7E0084E742: 
+    path: AFImageRequestOperation+OLImage.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F211151689EB4E0084E742: 
+    path: SDWebImageDownloader.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F210DA1689DB040084E742: 
+    path: UIBubbleTableView.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F20F861689B4E30084E742: 
+    path: iHubotTests-Info.plist
+    isa: PBXFileReference
+    lastKnownFileType: text.plist.xml
+    sourceTree: <group>
+  57F210641689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2104A1689C5610084E742
+  57F20F551689B4E30084E742: 
+    buildConfigurationList: 57F20F8F1689B4E30084E742
+    productReference: 57F20F561689B4E30084E742
+    productType: com.apple.product-type.application
+    productName: iHubot
+    isa: PBXNativeTarget
+    buildPhases: 
+    - 57F20F521689B4E30084E742
+    - 57F20F531689B4E30084E742
+    - 57F20F541689B4E30084E742
+    dependencies: []
+
+    name: iHubot
+    buildRules: []
+
+  57F210CB1689DB040084E742: 
+    path: typingMine.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F210D71689DB040084E742: 
+    path: NSBubbleData.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F2110A1689DBAB0084E742: 
+    path: ViewController.xib
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: file.xib
+  57F210871689CD5C0084E742: 
+    path: UIDevice+IdentifierAddition.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F210C81689DB040084E742: 
+    path: bubbleSomeone@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F211291689EB4E0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2111D1689EB4E0084E742
+  5725E9D0168E998700FFACF9: 
+    isa: PBXBuildFile
+    fileRef: 5725E9CF168E998700FFACF9
+  57F20F7B1689B4E30084E742: 
+    buildConfigurationList: 57F20F921689B4E30084E742
+    productReference: 57F20F7C1689B4E30084E742
+    productType: com.apple.product-type.bundle
+    productName: iHubotTests
+    isa: PBXNativeTarget
+    buildPhases: 
+    - 57F20F771689B4E30084E742
+    - 57F20F781689B4E30084E742
+    - 57F20F791689B4E30084E742
+    - 57F20F7A1689B4E30084E742
+    dependencies: 
+    - 57F20F831689B4E30084E742
+    name: iHubotTests
+    buildRules: []
+
+  57F2107C1689CBCB0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2106C1689CBCB0084E742
+  57F20F6C1689B4E30084E742: 
+    path: AppDelegate.m
+    isa: PBXFileReference
+    lastKnownFileType: sourcecode.c.objc
+    sourceTree: <group>
+  57F2104A1689C5610084E742: 
+    path: UnreadBulletHighlighted.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  5725E9CF168E998700FFACF9: 
+    path: Default@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F2106D1689CBCB0084E742: 
+    path: AFJSONRequestOperation.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F211101689EB4E0084E742: 
+    path: SDImageCache.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F2111E1689EB4E0084E742: 
+    path: UIButton+WebCache.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F210471689C5610084E742: 
+    path: SendButtonHighlighted@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F20F691689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F681689B4E30084E742
+  57F210A11689CD5C0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210881689CD5C0084E742
+    settings: 
+      COMPILER_FLAGS: -fno-objc-arc
+  57F210DF1689DB040084E742: 
+    path: UIBubbleTypingTableViewCell.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F2103B1689C5610084E742: 
+    path: MessageBubbleHighlighted@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F2110F1689EB4E0084E742: 
+    path: SDImageCache.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F210381689C5610084E742: 
+    path: MessageBubbleGray.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57FD7040168E8E27006BA28E: 
+    isa: PBXBuildFile
+    fileRef: 57FD703F168E8E27006BA28E
+  57F210AE1689DB040084E742: 
+    path: UIBubbleTableView
+    isa: PBXGroup
+    children: 
+    - 57F210C41689DB040084E742
+    - 57F210D51689DB040084E742
+    sourceTree: <group>
+  57F20F901689B4E30084E742: 
+    isa: XCBuildConfiguration
+    buildSettings: 
+      HEADER_SEARCH_PATHS: "\"${PROJECT_DIR}/Vendor/CocoaPlant/CocoaPlant\""
+      WRAPPER_EXTENSION: app
+      IPHONEOS_DEPLOYMENT_TARGET: "5.0"
+      GCC_PRECOMPILE_PREFIX_HEADER: "YES"
+      INFOPLIST_FILE: iHubot/iHubot-Info.plist
+      TARGETED_DEVICE_FAMILY: "1"
+      GCC_PREFIX_HEADER: iHubot/iHubot-Prefix.pch
+      PRODUCT_NAME: $(TARGET_NAME)
+    name: Debug
+  57F211821689F0220084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F211811689F0220084E742
+  57F20F501689B4E30084E742: 
+    isa: XCConfigurationList
+    defaultConfigurationIsVisible: "0"
+    defaultConfigurationName: Release
+    buildConfigurations: 
+    - 57F20F8D1689B4E30084E742
+    - 57F20F8E1689B4E30084E742
+  57F20F8F1689B4E30084E742: 
+    isa: XCConfigurationList
+    defaultConfigurationIsVisible: "0"
+    defaultConfigurationName: Release
+    buildConfigurations: 
+    - 57F20F901689B4E30084E742
+    - 57F20F911689B4E30084E742
+  57F2105E1689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210441689C5610084E742
+  57F20F961689B55C0084E742: 
+    path: Message.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F20F731689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F721689B4E30084E742
+  57F211831689F5D80084E742: 
+    path: System/Library/Frameworks/MediaPlayer.framework
+    isa: PBXFileReference
+    name: MediaPlayer.framework
+    lastKnownFileType: wrapper.framework
+    sourceTree: SDKROOT
+  57F210F51689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210CA1689DB040084E742
+  57F210741689CBCB0084E742: 
+    path: AFURLConnectionOperation.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F20F641689B4E30084E742: 
+    path: iHubot-Info.plist
+    isa: PBXFileReference
+    lastKnownFileType: text.plist.xml
+    sourceTree: <group>
+  57F210421689C5610084E742: 
+    path: MessageReceived.aiff
+    isa: PBXFileReference
+    lastKnownFileType: audio.aiff
+    sourceTree: <group>
+  57F211161689EB4E0084E742: 
+    path: SDWebImageDownloader.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F20F8A1689B4E30084E742: 
+    path: iHubotTests.h
+    isa: PBXFileReference
+    lastKnownFileType: sourcecode.c.h
+    sourceTree: <group>
+  5725E9D2168E998A00FFACF9: 
+    isa: PBXBuildFile
+    fileRef: 5725E9D1168E998A00FFACF9
+  57F210651689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2104B1689C5610084E742
+  57F20F871689B4E30084E742: 
+    isa: PBXVariantGroup
+    name: InfoPlist.strings
+    children: 
+    - 57F20F881689B4E30084E742
+    sourceTree: <group>
+  57F210CC1689DB040084E742: 
+    path: typingMine@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F20F781689B4E30084E742: 
+    isa: PBXFrameworksBuildPhase
+    buildActionMask: "2147483647"
+    files: 
+    - 57F20F7E1689B4E30084E742
+    - 57F20F7F1689B4E30084E742
+    - 57F20F801689B4E30084E742
+    - 57F20F811689B4E30084E742
+    runOnlyForDeploymentPostprocessing: "0"
+  57F210561689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2103C1689C5610084E742
+  57F2110B1689DBAB0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2110A1689DBAB0084E742
+  57F210791689CBCB0084E742: 
+    path: UIImageView+AFNetworking.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F210C91689DB040084E742: 
+    path: missingAvatar.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F210F01689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210C51689DB040084E742
+  57F211371689EF7E0084E742: 
+    path: OLImageView.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F211201689EB4E0084E742: 
+    path: UIImageView+WebCache.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F20F6D1689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F6C1689B4E30084E742
+  57F2106E1689CBCB0084E742: 
+    path: AFJSONRequestOperation.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F211111689EB4E0084E742: 
+    path: SDWebImageCompat.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F20F5E1689B4E30084E742: 
+    path: System/Library/Frameworks/CoreGraphics.framework
+    isa: PBXFileReference
+    name: CoreGraphics.framework
+    lastKnownFileType: wrapper.framework
+    sourceTree: SDKROOT
+  57F2103C1689C5610084E742: 
+    path: MessageBubbleTyping.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57FD703F168E8E27006BA28E: 
+    path: hubot@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F211071689DB440084E742: 
+    path: ViewController.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F210391689C5610084E742: 
+    path: MessageBubbleGray@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F20F911689B4E30084E742: 
+    isa: XCBuildConfiguration
+    buildSettings: 
+      HEADER_SEARCH_PATHS: "\"${PROJECT_DIR}/Vendor/CocoaPlant/CocoaPlant\""
+      WRAPPER_EXTENSION: app
+      IPHONEOS_DEPLOYMENT_TARGET: "5.0"
+      GCC_PRECOMPILE_PREFIX_HEADER: "YES"
+      INFOPLIST_FILE: iHubot/iHubot-Info.plist
+      TARGETED_DEVICE_FAMILY: "1"
+      GCC_PREFIX_HEADER: iHubot/iHubot-Prefix.pch
+      PRODUCT_NAME: $(TARGET_NAME)
+    name: Release
+  57F20F821689B4E30084E742: 
+    isa: PBXContainerItemProxy
+    containerPortal: 57F20F4D1689B4E30084E742
+    remoteGlobalIDString: 57F20F551689B4E30084E742
+    remoteInfo: iHubot
+    proxyType: "1"
+  57F210601689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210461689C5610084E742
+  57F210511689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210371689C5610084E742
+  57F2105F1689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210451689C5610084E742
+  57F210C41689DB040084E742: 
+    path: images
+    isa: PBXGroup
+    children: 
+    - 57F210C51689DB040084E742
+    - 57F210C61689DB040084E742
+    - 57F210C71689DB040084E742
+    - 57F210C81689DB040084E742
+    - 57F210C91689DB040084E742
+    - 57F210CA1689DB040084E742
+    - 57F210CB1689DB040084E742
+    - 57F210CC1689DB040084E742
+    - 57F210CD1689DB040084E742
+    - 57F210CE1689DB040084E742
+    sourceTree: <group>
+  57F211251689EB4E0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F211141689EB4E0084E742
+  57F211031689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210E01689DB040084E742
+    settings: 
+      COMPILER_FLAGS: -fno-objc-arc
+  57F2112C1689ECDD0084E742: 
+    path: System/Library/Frameworks/ImageIO.framework
+    isa: PBXFileReference
+    name: ImageIO.framework
+    lastKnownFileType: wrapper.framework
+    sourceTree: SDKROOT
+  57F211841689F5D80084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F211831689F5D80084E742
+  57F210431689C5610084E742: 
+    path: MessageSent.aiff
+    isa: PBXFileReference
+    lastKnownFileType: audio.aiff
+    sourceTree: <group>
+  57F20F651689B4E30084E742: 
+    isa: PBXVariantGroup
+    name: InfoPlist.strings
+    children: 
+    - 57F20F661689B4E30084E742
+    sourceTree: <group>
+  57F210DB1689DB040084E742: 
+    path: UIBubbleTableView.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F210661689CBCB0084E742: 
+    path: AFNetworking/AFNetworking
+    isa: PBXGroup
+    name: AFNetworking
+    children: 
+    - 57F210671689CBCB0084E742
+    - 57F210681689CBCB0084E742
+    - 57F210691689CBCB0084E742
+    - 57F2106A1689CBCB0084E742
+    - 57F2106B1689CBCB0084E742
+    - 57F2106C1689CBCB0084E742
+    - 57F2106D1689CBCB0084E742
+    - 57F2106E1689CBCB0084E742
+    - 57F2106F1689CBCB0084E742
+    - 57F210701689CBCB0084E742
+    - 57F210711689CBCB0084E742
+    - 57F210721689CBCB0084E742
+    - 57F210731689CBCB0084E742
+    - 57F210741689CBCB0084E742
+    - 57F210751689CBCB0084E742
+    - 57F210761689CBCB0084E742
+    - 57F210771689CBCB0084E742
+    - 57F210781689CBCB0084E742
+    - 57F210791689CBCB0084E742
+    sourceTree: <group>
+  57F20F561689B4E30084E742: 
+    path: iHubot.app
+    isa: PBXFileReference
+    includeInIndex: "0"
+    explicitFileType: wrapper.application
+    sourceTree: BUILT_PRODUCTS_DIR
+  57F210D81689DB040084E742: 
+    path: UIBubbleHeaderTableViewCell.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F20F8B1689B4E30084E742: 
+    path: iHubotTests.m
+    isa: PBXFileReference
+    lastKnownFileType: sourcecode.c.objc
+    sourceTree: <group>
+  57F210881689CD5C0084E742: 
+    path: UIDevice+IdentifierAddition.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F211A61689F60D0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2118B1689F60D0084E742
+  57F2105A1689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210401689C5610084E742
+  57F20F4B1689B4E30084E742: 
+    isa: PBXGroup
+    sourceTree: <group>
+    children: 
+    - 5725E9D1168E998A00FFACF9
+    - 5725E9CF168E998700FFACF9
+    - 5725E9CD168E998200FFACF9
+    - 57FD703F168E8E27006BA28E
+    - 57FD703D168E8E25006BA28E
+    - 57F210311689C5610084E742
+    - 57F20FAC1689B7510084E742
+    - 57F20F621689B4E30084E742
+    - 57F20F841689B4E30084E742
+    - 57F20F591689B4E30084E742
+    - 57F20F571689B4E30084E742
+  57F20F7C1689B4E30084E742: 
+    path: iHubotTests.octest
+    isa: PBXFileReference
+    includeInIndex: "0"
+    explicitFileType: wrapper.cfbundle
+    sourceTree: BUILT_PRODUCTS_DIR
+  57F2107D1689CBCB0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2106E1689CBCB0084E742
+  57F2104B1689C5610084E742: 
+    path: UnreadBulletHighlighted@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F210571689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2103D1689C5610084E742
+  57F20F791689B4E30084E742: 
+    isa: PBXResourcesBuildPhase
+    buildActionMask: "2147483647"
+    files: 
+    - 57F20F891689B4E30084E742
+    runOnlyForDeploymentPostprocessing: "0"
+  57F2118A1689F60D0084E742: 
+    path: LBYouTubeExtractor.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F210481689C5610084E742: 
+    path: UnreadBullet.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F2111F1689EB4E0084E742: 
+    path: UIButton+WebCache.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F210701689CBCB0084E742: 
+    path: AFNetworkActivityIndicatorManager.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F20F601689B4E30084E742: 
+    path: System/Library/Frameworks/CoreData.framework
+    isa: PBXFileReference
+    name: CoreData.framework
+    lastKnownFileType: wrapper.framework
+    sourceTree: SDKROOT
+  57F211121689EB4E0084E742: 
+    path: SDWebImageCompat.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F2103D1689C5610084E742: 
+    path: MessageBubbleTyping@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F20F5F1689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F5E1689B4E30084E742
+  57F2115E1689EF7E0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F211311689EF7E0084E742
+  57F211081689DB440084E742: 
+    path: ViewController.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F210831689CD5C0084E742: 
+    path: UIDevice-with-UniqueIdentifier-for-iOS-5
+    isa: PBXGroup
+    children: 
+    - 57F210841689CD5C0084E742
+    sourceTree: <group>
+  5725E9CD168E998200FFACF9: 
+    path: Default.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F210611689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210471689C5610084E742
+  57F20F971689B55C0084E742: 
+    path: Message.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F20F831689B4E30084E742: 
+    isa: PBXTargetDependency
+    target: 57F20F551689B4E30084E742
+    targetProxy: 57F20F821689B4E30084E742
+  57F210521689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210381689C5610084E742
+  57F20F741689B4E30084E742: 
+    path: iHubot.xcdatamodeld
+    isa: XCVersionGroup
+    currentVersion: 57F20F751689B4E30084E742
+    versionGroupType: wrapper.xcdatamodel
+    children: 
+    - 57F20F751689B4E30084E742
+    sourceTree: <group>
+  57F210F61689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210CB1689DB040084E742
+  57F210751689CBCB0084E742: 
+    path: AFURLConnectionOperation.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F211261689EB4E0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F211161689EB4E0084E742
+  57F2111A1689EB4E0084E742: 
+    path: SDWebImageManager.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F211171689EB4E0084E742: 
+    path: SDWebImageDownloaderOperation.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F2106A1689CBCB0084E742: 
+    path: AFHTTPRequestOperation.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F20F5A1689B4E30084E742: 
+    path: System/Library/Frameworks/UIKit.framework
+    isa: PBXFileReference
+    name: UIKit.framework
+    lastKnownFileType: wrapper.framework
+    sourceTree: SDKROOT
+  57F210DC1689DB040084E742: 
+    path: UIBubbleTableViewCell.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F20F881689B4E30084E742: 
+    path: en.lproj/InfoPlist.strings
+    isa: PBXFileReference
+    name: en
+    lastKnownFileType: text.plist.strings
+    sourceTree: <group>
+  57F20F571689B4E30084E742: 
+    isa: PBXGroup
+    name: Products
+    children: 
+    - 57F20F561689B4E30084E742
+    - 57F20F7C1689B4E30084E742
+    sourceTree: <group>
+  57F2110C1689EB4E0084E742: 
+    path: SDWebImage/SDWebImage
+    isa: PBXGroup
+    name: SDWebImage
+    children: 
+    - 57F2110F1689EB4E0084E742
+    - 57F211101689EB4E0084E742
+    - 57F211111689EB4E0084E742
+    - 57F211121689EB4E0084E742
+    - 57F211131689EB4E0084E742
+    - 57F211141689EB4E0084E742
+    - 57F211151689EB4E0084E742
+    - 57F211161689EB4E0084E742
+    - 57F211171689EB4E0084E742
+    - 57F211181689EB4E0084E742
+    - 57F211191689EB4E0084E742
+    - 57F2111A1689EB4E0084E742
+    - 57F2111B1689EB4E0084E742
+    - 57F2111C1689EB4E0084E742
+    - 57F2111D1689EB4E0084E742
+    - 57F2111E1689EB4E0084E742
+    - 57F2111F1689EB4E0084E742
+    - 57F211201689EB4E0084E742
+    - 57F211211689EB4E0084E742
+    sourceTree: <group>
+  57F210CD1689DB040084E742: 
+    path: typingSomeone.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F210D91689DB040084E742: 
+    path: UIBubbleHeaderTableViewCell.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F20F7D1689B4E30084E742: 
+    path: Library/Frameworks/SenTestingKit.framework
+    isa: PBXFileReference
+    name: SenTestingKit.framework
+    lastKnownFileType: wrapper.framework
+    sourceTree: DEVELOPER_DIR
+  57F210F11689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210C61689DB040084E742
+  57F210FF1689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210D71689DB040084E742
+    settings: 
+      COMPILER_FLAGS: -fno-objc-arc
+  57F2107E1689CBCB0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210701689CBCB0084E742
+  57F20F6E1689B4E30084E742: 
+    path: Default.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F211211689EB4E0084E742: 
+    path: UIImageView+WebCache.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F2106F1689CBCB0084E742: 
+    path: AFNetworkActivityIndicatorManager.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F2118B1689F60D0084E742: 
+    path: LBYouTubeExtractor.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F210491689C5610084E742: 
+    path: UnreadBullet@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F211881689F60D0084E742: 
+    path: LBYouTubeView
+    isa: PBXGroup
+    children: 
+    - 57F211891689F60D0084E742
+    - 57F2118A1689F60D0084E742
+    - 57F2118B1689F60D0084E742
+    - 57F2118C1689F60D0084E742
+    - 57F2118D1689F60D0084E742
+    sourceTree: <group>
+  57F20F611689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F601689B4E30084E742
+  57F20F921689B4E30084E742: 
+    isa: XCConfigurationList
+    defaultConfigurationIsVisible: "0"
+    defaultConfigurationName: Release
+    buildConfigurations: 
+    - 57F20F931689B4E30084E742
+    - 57F20F941689B4E30084E742
+  57F20F521689B4E30084E742: 
+    isa: PBXSourcesBuildPhase
+    buildActionMask: "2147483647"
+    files: 
+    - 57F20F691689B4E30084E742
+    - 57F20F6D1689B4E30084E742
+    - 57F20F761689B4E30084E742
+    - 57F20F9C1689B55C0084E742
+    - 57F2107A1689CBCB0084E742
+    - 57F2107B1689CBCB0084E742
+    - 57F2107C1689CBCB0084E742
+    - 57F2107D1689CBCB0084E742
+    - 57F2107E1689CBCB0084E742
+    - 57F2107F1689CBCB0084E742
+    - 57F210801689CBCB0084E742
+    - 57F210811689CBCB0084E742
+    - 57F210821689CBCB0084E742
+    - 57F210A01689CD5C0084E742
+    - 57F210A11689CD5C0084E742
+    - 57F210FF1689DB040084E742
+    - 57F211001689DB040084E742
+    - 57F211011689DB040084E742
+    - 57F211021689DB040084E742
+    - 57F211031689DB040084E742
+    - 57F211091689DB440084E742
+    - 57F211231689EB4E0084E742
+    - 57F211241689EB4E0084E742
+    - 57F211251689EB4E0084E742
+    - 57F211261689EB4E0084E742
+    - 57F211271689EB4E0084E742
+    - 57F211281689EB4E0084E742
+    - 57F211291689EB4E0084E742
+    - 57F2112A1689EB4E0084E742
+    - 57F2112B1689EB4E0084E742
+    - 57F2115E1689EF7E0084E742
+    - 57F211611689EF7E0084E742
+    - 57F211621689EF7E0084E742
+    - 57F211A61689F60D0084E742
+    - 57F211A71689F60D0084E742
+    runOnlyForDeploymentPostprocessing: "0"
+  57F210841689CD5C0084E742: 
+    path: Classes
+    isa: PBXGroup
+    children: 
+    - 57F210851689CD5C0084E742
+    - 57F210861689CD5C0084E742
+    - 57F210871689CD5C0084E742
+    - 57F210881689CD5C0084E742
+    sourceTree: <group>
+  57F210C51689DB040084E742: 
+    path: bubbleMine.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F2112A1689EB4E0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2111F1689EB4E0084E742
+  57F20F751689B4E30084E742: 
+    path: iHubot.xcdatamodel
+    isa: PBXFileReference
+    lastKnownFileType: wrapper.xcdatamodel
+    sourceTree: <group>
+  57F210531689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210391689C5610084E742
+  57F2112D1689ECDD0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2112C1689ECDD0084E742
+  57F210F71689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210CC1689DB040084E742
+  57F210761689CBCB0084E742: 
+    path: AFXMLRequestOperation.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F20F661689B4E30084E742: 
+    path: en.lproj/InfoPlist.strings
+    isa: PBXFileReference
+    name: en
+    lastKnownFileType: text.plist.strings
+    sourceTree: <group>
+  57F210441689C5610084E742: 
+    path: SendButton.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F2111B1689EB4E0084E742: 
+    path: SDWebImageOperation.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F210671689CBCB0084E742: 
+    path: AFHTTPClient.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F211181689EB4E0084E742: 
+    path: SDWebImageDownloaderOperation.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F20F8C1689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F8B1689B4E30084E742
+  57F20F5B1689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F5A1689B4E30084E742
+  57F211A71689F60D0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2118D1689F60D0084E742
+  57F2105B1689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210411689C5610084E742
+  57F20F891689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F871689B4E30084E742
+  57F210CE1689DB040084E742: 
+    path: typingSomeone@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F210581689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2103E1689C5610084E742
+  57F210801689CBCB0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210751689CBCB0084E742
+  57F20F701689B4E30084E742: 
+    path: Default@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F210F21689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210C71689DB040084E742
+  57F210711689CBCB0084E742: 
+    path: AFNetworking.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F20F6F1689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F6E1689B4E30084E742
+  57F211131689EB4E0084E742: 
+    path: SDWebImageDecoder.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F2103E1689C5610084E742: 
+    path: MessageInputBarBackground.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F211091689DB440084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F211081689DB440084E742
+    settings: 
+      COMPILER_FLAGS: -fno-objc-arc
+  57F20F931689B4E30084E742: 
+    isa: XCBuildConfiguration
+    buildSettings: 
+      WRAPPER_EXTENSION: octest
+      FRAMEWORK_SEARCH_PATHS: 
+      - "\"$(SDKROOT)/Developer/Library/Frameworks\""
+      - "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\""
+      TEST_HOST: $(BUNDLE_LOADER)
+      GCC_PRECOMPILE_PREFIX_HEADER: "YES"
+      INFOPLIST_FILE: iHubotTests/iHubotTests-Info.plist
+      BUNDLE_LOADER: $(BUILT_PRODUCTS_DIR)/iHubot.app/iHubot
+      GCC_PREFIX_HEADER: iHubot/iHubot-Prefix.pch
+      PRODUCT_NAME: $(TARGET_NAME)
+    name: Debug
+  57FD703D168E8E25006BA28E: 
+    path: hubot.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  5725E9CE168E998200FFACF9: 
+    isa: PBXBuildFile
+    fileRef: 5725E9CD168E998200FFACF9
+  57F20F841689B4E30084E742: 
+    path: iHubotTests
+    isa: PBXGroup
+    children: 
+    - 57F20F8A1689B4E30084E742
+    - 57F20F8B1689B4E30084E742
+    - 57F20F851689B4E30084E742
+    sourceTree: <group>
+  57F20F531689B4E30084E742: 
+    isa: PBXFrameworksBuildPhase
+    buildActionMask: "2147483647"
+    files: 
+    - 57F211841689F5D80084E742
+    - 57F211821689F0220084E742
+    - 57F2112D1689ECDD0084E742
+    - 57F20F5B1689B4E30084E742
+    - 57F20F5D1689B4E30084E742
+    - 57F20F5F1689B4E30084E742
+    - 57F20F611689B4E30084E742
+    runOnlyForDeploymentPostprocessing: "0"
+  57F210621689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210481689C5610084E742
+  57F20F9C1689B55C0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F971689B55C0084E742
+  57F210C61689DB040084E742: 
+    path: bubbleMine@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F211271689EB4E0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F211181689EB4E0084E742
+  57F211341689EF7E0084E742: 
+    path: OLImage.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F2107A1689CBCB0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210681689CBCB0084E742
+  57F20F6A1689B4E30084E742: 
+    path: iHubot-Prefix.pch
+    isa: PBXFileReference
+    lastKnownFileType: sourcecode.c.h
+    sourceTree: <group>
+  57F2106B1689CBCB0084E742: 
+    path: AFImageRequestOperation.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F2111C1689EB4E0084E742: 
+    path: SDWebImagePrefetcher.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F210451689C5610084E742: 
+    path: SendButton@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F20F671689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F651689B4E30084E742
+  57F210DD1689DB040084E742: 
+    path: UIBubbleTableViewCell.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F210681689CBCB0084E742: 
+    path: AFHTTPClient.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F210361689C5610084E742: 
+    path: MessageBubbleBlue.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F20FAC1689B7510084E742: 
+    path: Vendor
+    isa: PBXGroup
+    children: 
+    - 57F211851689F60D0084E742
+    - 57F2112E1689EF7E0084E742
+    - 57F2110C1689EB4E0084E742
+    - 57F210AE1689DB040084E742
+    - 57F210831689CD5C0084E742
+    - 57F210661689CBCB0084E742
+    sourceTree: <group>
+  57F20F8D1689B4E30084E742: 
+    isa: XCBuildConfiguration
+    buildSettings: 
+      GCC_WARN_ABOUT_RETURN_TYPE: "YES"
+      GCC_PREPROCESSOR_DEFINITIONS: 
+      - DEBUG=1
+      - $(inherited)
+      ONLY_ACTIVE_ARCH: "YES"
+      GCC_SYMBOLS_PRIVATE_EXTERN: "NO"
+      GCC_WARN_UNINITIALIZED_AUTOS: "YES"
+      CLANG_CXX_LANGUAGE_STANDARD: gnu++0x
+      GCC_OPTIMIZATION_LEVEL: "0"
+      GCC_C_LANGUAGE_STANDARD: gnu99
+      TARGETED_DEVICE_FAMILY: "1,2"
+      CLANG_WARN__DUPLICATE_METHOD_MATCH: "YES"
+      CLANG_WARN_EMPTY_BODY: "YES"
+      ALWAYS_SEARCH_USER_PATHS: "NO"
+      SDKROOT: iphoneos
+      CLANG_ENABLE_OBJC_ARC: "YES"
+      COPY_PHASE_STRIP: "NO"
+      GCC_DYNAMIC_NO_PIC: "NO"
+      CODE_SIGN_IDENTITY[sdk=iphoneos*]: iPhone Developer
+      IPHONEOS_DEPLOYMENT_TARGET: "6.0"
+      CLANG_CXX_LIBRARY: libc++
+      GCC_WARN_UNUSED_VARIABLE: "YES"
+    name: Debug
+  57F2105C1689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210421689C5610084E742
+  57F20F7E1689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F7D1689B4E30084E742
+  57F20F4D1689B4E30084E742: 
+    buildConfigurationList: 57F20F501689B4E30084E742
+    targets: 
+    - 57F20F551689B4E30084E742
+    - 57F20F7B1689B4E30084E742
+    developmentRegion: English
+    knownRegions: 
+    - en
+    isa: PBXProject
+    compatibilityVersion: Xcode 3.2
+    productRefGroup: 57F20F571689B4E30084E742
+    projectDirPath: ""
+    attributes: 
+      LastUpgradeCheck: "0450"
+      ORGANIZATIONNAME: Sergey Klimov
+    hasScannedForEncodings: "0"
+    projectRoot: ""
+    mainGroup: 57F20F4B1689B4E30084E742
+  57F2107F1689CBCB0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210731689CBCB0084E742
+  57F211001689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210D91689DB040084E742
+    settings: 
+      COMPILER_FLAGS: -fno-objc-arc
+  57F210591689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2103F1689C5610084E742
+  57F2118C1689F60D0084E742: 
+    path: LBYouTubePlayerController.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F20F711689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F701689B4E30084E742
+  57FD7041168E8EE4006BA28E: 
+    path: Settings.bundle
+    isa: PBXFileReference
+    lastKnownFileType: wrapper.plug-in
+    sourceTree: <group>
+  57F2112E1689EF7E0084E742: 
+    path: OLImageView
+    isa: PBXGroup
+    children: 
+    - 57F2112F1689EF7E0084E742
+    - 57F211341689EF7E0084E742
+    - 57F211351689EF7E0084E742
+    - 57F211361689EF7E0084E742
+    - 57F211371689EF7E0084E742
+    sourceTree: <group>
+  57F210721689CBCB0084E742: 
+    path: AFPropertyListRequestOperation.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F211891689F60D0084E742: 
+    path: LBYouTube.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F20F621689B4E30084E742: 
+    path: iHubot
+    isa: PBXGroup
+    children: 
+    - 57F211071689DB440084E742
+    - 57F211081689DB440084E742
+    - 57F2110A1689DBAB0084E742
+    - 57F20F961689B55C0084E742
+    - 57F20F971689B55C0084E742
+    - 57F20F6B1689B4E30084E742
+    - 57F20F6C1689B4E30084E742
+    - 57F20F741689B4E30084E742
+    - 57F20F631689B4E30084E742
+    sourceTree: <group>
+  57F210401689C5610084E742: 
+    path: MessageInputFieldBackground.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F211611689EF7E0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F211351689EF7E0084E742
+  57F211141689EB4E0084E742: 
+    path: SDWebImageDecoder.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F210311689C5610084E742: 
+    path: iHubot/Resources
+    isa: PBXGroup
+    name: Resources
+    children: 
+    - 57F210361689C5610084E742
+    - 57F210371689C5610084E742
+    - 57F210381689C5610084E742
+    - 57F210391689C5610084E742
+    - 57F2103A1689C5610084E742
+    - 57F2103B1689C5610084E742
+    - 57F2103C1689C5610084E742
+    - 57F2103D1689C5610084E742
+    - 57F2103E1689C5610084E742
+    - 57F2103F1689C5610084E742
+    - 57F210401689C5610084E742
+    - 57F210411689C5610084E742
+    - 57F210421689C5610084E742
+    - 57F210431689C5610084E742
+    - 57F210441689C5610084E742
+    - 57F210451689C5610084E742
+    - 57F210461689C5610084E742
+    - 57F210471689C5610084E742
+    - 57F210481689C5610084E742
+    - 57F210491689C5610084E742
+    - 57F2104A1689C5610084E742
+    - 57F2104B1689C5610084E742
+    sourceTree: <group>
+  57F2103F1689C5610084E742: 
+    path: MessageInputBarBackground@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F210D51689DB040084E742: 
+    path: src
+    isa: PBXGroup
+    children: 
+    - 57F210D61689DB040084E742
+    - 57F210D71689DB040084E742
+    - 57F210D81689DB040084E742
+    - 57F210D91689DB040084E742
+    - 57F210DA1689DB040084E742
+    - 57F210DB1689DB040084E742
+    - 57F210DC1689DB040084E742
+    - 57F210DD1689DB040084E742
+    - 57F210DE1689DB040084E742
+    - 57F210DF1689DB040084E742
+    - 57F210E01689DB040084E742
+    sourceTree: <group>
+  57F210851689CD5C0084E742: 
+    path: NSString+MD5Addition.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57FD703E168E8E25006BA28E: 
+    isa: PBXBuildFile
+    fileRef: 57FD703D168E8E25006BA28E
+  57F20F851689B4E30084E742: 
+    isa: PBXGroup
+    name: Supporting Files
+    children: 
+    - 57F20F861689B4E30084E742
+    - 57F20F871689B4E30084E742
+    sourceTree: <group>
+  57F210631689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210491689C5610084E742
+  57F210CA1689DB040084E742: 
+    path: missingAvatar@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F2112B1689EB4E0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F211211689EB4E0084E742
+  57F20F761689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F741689B4E30084E742
+  57F210541689C5610084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2103A1689C5610084E742
+  57F210F81689DB040084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210CD1689DB040084E742
+  57F210C71689DB040084E742: 
+    path: bubbleSomeone.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F210771689CBCB0084E742: 
+    path: AFXMLRequestOperation.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F211281689EB4E0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F2111A1689EB4E0084E742
+  57F211351689EF7E0084E742: 
+    path: OLImage.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F211191689EB4E0084E742: 
+    path: SDWebImageManager.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F20F6B1689B4E30084E742: 
+    path: AppDelegate.h
+    isa: PBXFileReference
+    lastKnownFileType: sourcecode.c.h
+    sourceTree: <group>
+  57F2106C1689CBCB0084E742: 
+    path: AFImageRequestOperation.m
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.objc
+  57F20F5C1689B4E30084E742: 
+    path: System/Library/Frameworks/Foundation.framework
+    isa: PBXFileReference
+    name: Foundation.framework
+    lastKnownFileType: wrapper.framework
+    sourceTree: SDKROOT
+  57F2103A1689C5610084E742: 
+    path: MessageBubbleHighlighted.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F210DE1689DB040084E742: 
+    path: UIBubbleTableViewDataSource.h
+    isa: PBXFileReference
+    sourceTree: <group>
+    fileEncoding: "4"
+    lastKnownFileType: sourcecode.c.h
+  57F20F591689B4E30084E742: 
+    isa: PBXGroup
+    name: Frameworks
+    children: 
+    - 57F211831689F5D80084E742
+    - 57F211811689F0220084E742
+    - 57F2112C1689ECDD0084E742
+    - 57F20F5A1689B4E30084E742
+    - 57F20F5C1689B4E30084E742
+    - 57F20F5E1689B4E30084E742
+    - 57F20F601689B4E30084E742
+    - 57F20F7D1689B4E30084E742
+    sourceTree: <group>
+  57F210371689C5610084E742: 
+    path: MessageBubbleBlue@2x.png
+    isa: PBXFileReference
+    lastKnownFileType: image.png
+    sourceTree: <group>
+  57F20F801689B4E30084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F20F5C1689B4E30084E742
+  57F210811689CBCB0084E742: 
+    isa: PBXBuildFile
+    fileRef: 57F210771689CBCB0084E742
+rootObject: 57F20F4D1689B4E30084E742
