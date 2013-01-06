@@ -61,6 +61,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [Message sendMessage:@"hubot help"];
+    [Message sendMessage:@"hubot help"];
+
+    self.fetchedResultsController = [self createFetchedResultsController];
     textField.delegate = self;
     
     bubbleTable.bubbleDataSource = self;
@@ -171,10 +175,17 @@
     
     textField.text = @"";
     [textField resignFirstResponder];
+    
+    
+    
+    
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)_textField {
     [self sayPressed:_textField];
+    
+    
+    
     return NO;
 }
 
@@ -182,19 +193,23 @@
 
 #pragma mark - NSFetchedResultsControllerDelegate
 
-- (NSFetchedResultsController *)fetchedResultsController {
-    if (_fetchedResultsController) return _fetchedResultsController;
+- (NSFetchedResultsController *)createFetchedResultsController {
+   
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Message"];
     NSError __autoreleasing *error = nil;
-    NSUInteger messagesCount = [_managedObjectContext countForFetchRequest:fetchRequest error:&error];
-    NSAssert(messagesCount != NSNotFound, @"-[NSManagedObjectContext countForFetchRequest:error:] error:\n\n%@", error);
 
     [fetchRequest setFetchBatchSize:10];
     [fetchRequest setSortDescriptors:@[[[NSSortDescriptor alloc] initWithKey:@"sentDate" ascending:YES]]];
-    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:_managedObjectContext sectionNameKeyPath:nil cacheName:@"Message"];
-    _fetchedResultsController.delegate = self;
-    NSAssert([_fetchedResultsController performFetch:&error], @"-[NSFetchedResultsController performFetch:] error:\n\n%@", error);
-    return _fetchedResultsController;
+    NSFetchedResultsController* fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    fetchedResultsController.delegate = self;
+    BOOL success =[fetchedResultsController performFetch:&error];
+    if (!success) {
+        NSLog(@"Unable to fetch messages: %@", error);
+    }
+    
+    NSArray *results = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+
+    return fetchedResultsController;
 }
 
 

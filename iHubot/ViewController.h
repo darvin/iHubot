@@ -12,7 +12,7 @@
 #import "UIBubbleTableViewDataSource.h"
 
 @interface ViewController : UIViewController <UIBubbleTableViewDataSource, NSFetchedResultsControllerDelegate>
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (strong, atomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @end
